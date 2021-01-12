@@ -1,16 +1,34 @@
 PODS:
+  - AppCenter (4.1.0):
+    - AppCenter/Analytics (= 4.1.0)
+    - AppCenter/Crashes (= 4.1.0)
+  - AppCenter/Analytics (4.1.0):
+    - AppCenter/Core
+  - AppCenter/Core (4.1.0)
+  - AppCenter/Crashes (4.1.0):
+    - AppCenter/Core
+  - Rudder (1.0.10)
   - Rudder-AppCenter (0.1.0)
 
 DEPENDENCIES:
+  - AppCenter
+  - Rudder
   - Rudder-AppCenter (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AppCenter
+    - Rudder
 
 EXTERNAL SOURCES:
   Rudder-AppCenter:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AppCenter: 8832b158d17e54845c3b88a91076218f0b07174d
+  Rudder: 05e61fe2e59bcd65931f4a47d21011e15adf7159
   Rudder-AppCenter: 1790880363698cfe28d353f5a11bd7eba06be901
 
-PODFILE CHECKSUM: 874a1dfe0df9479532d3a4664d068d19c3a350d3
+PODFILE CHECKSUM: 0bb81dc22d932a256f128fdbe450b1044c15faf6
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

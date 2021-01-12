@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "RudderAppCenterFactory.h"
+#import "RudderAppCenterIntegration.h"
 
 FOUNDATION_EXPORT double Rudder_AppCenterVersionNumber;
 FOUNDATION_EXPORT const unsigned char Rudder_AppCenterVersionString[];
