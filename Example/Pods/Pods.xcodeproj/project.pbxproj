@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		007D9D9474B64A02005E91874A7A4607 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		11C6052C25AE17C300F74ED8 /* RudderAppCenterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C6052A25AE17C300F74ED8 /* RudderAppCenterFactory.h */; };
+		11C6052D25AE17C300F74ED8 /* RudderAppCenterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C6052B25AE17C300F74ED8 /* RudderAppCenterFactory.m */; };
+		11C6053325AE17DC00F74ED8 /* RudderAppCenterIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C6053125AE17DC00F74ED8 /* RudderAppCenterIntegration.h */; };
+		11C6053425AE17DC00F74ED8 /* RudderAppCenterIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C6053225AE17DC00F74ED8 /* RudderAppCenterIntegration.m */; };
+		4514FF80D166EB2561304A5A887619E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4739674EFC5E01D906B40AB283E1C54B /* Pods-Rudder-AppCenter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8623687F7C08703C8AC0FC6C3AD6BDF6 /* Pods-Rudder-AppCenter_Example-dummy.m */; };
+		542077416A7A4460D1FCAE67F7ADF887 /* Pods-Rudder-AppCenter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E7ABEEF6A4F11F9F37628030C8E4295 /* Pods-Rudder-AppCenter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80D523B68DC9161D054DDBDA5B972A24 /* Rudder-AppCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 885F6930961870D86C2C513EE1600577 /* Rudder-AppCenter-dummy.m */; };
+		97746DED1E318795B6185024EC1359F9 /* Pods-Rudder-AppCenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8CD4BA490AF6FBA32890363931BB422 /* Pods-Rudder-AppCenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EC39E310BF408D35A4DDB5D84E690AB /* Rudder-AppCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA399F947DFBF627C320CBDAB63EAA4F /* Rudder-AppCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3E7B87A2D4512A1234F413DA8050FFE /* Pods-Rudder-AppCenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 616DC249F7B255CD346892786A89F9C3 /* Pods-Rudder-AppCenter_Tests-dummy.m */; };
+		EEC9ABE589A84CE13F8E267D18ECDD64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38CCA7160666517AD21CDD249A70CDEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15519E0CC021D7DF834A08A37C0CD32D;
+			remoteInfo = "Rudder-AppCenter";
+		};
+		FEFFD04FFB15513BDC700A054CF861DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5B2DF4F4BE01377110C24B8B56C108F;
+			remoteInfo = "Pods-Rudder-AppCenter_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11C6052A25AE17C300F74ED8 /* RudderAppCenterFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RudderAppCenterFactory.h; path = "Rudder-AppCenter/Classes/RudderAppCenterFactory.h"; sourceTree = "<group>"; };
+		11C6052B25AE17C300F74ED8 /* RudderAppCenterFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RudderAppCenterFactory.m; path = "Rudder-AppCenter/Classes/RudderAppCenterFactory.m"; sourceTree = "<group>"; };
+		11C6053125AE17DC00F74ED8 /* RudderAppCenterIntegration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RudderAppCenterIntegration.h; path = "Rudder-AppCenter/Classes/RudderAppCenterIntegration.h"; sourceTree = "<group>"; };
+		11C6053225AE17DC00F74ED8 /* RudderAppCenterIntegration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RudderAppCenterIntegration.m; path = "Rudder-AppCenter/Classes/RudderAppCenterIntegration.m"; sourceTree = "<group>"; };
+		1ACA1A1160C16425E92B9E2EFAF1664A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1FEF46EFC59AF2A1389912E8730FB288 /* Pods-Rudder-AppCenter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rudder-AppCenter_Tests.modulemap"; sourceTree = "<group>"; };
+		21F1DEC05B1B7AF1AE470D637B77A92B /* Pods_Rudder_AppCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rudder_AppCenter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23241BFB4383C9DD106DFEA7CD1D9336 /* Rudder-AppCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rudder-AppCenter-prefix.pch"; sourceTree = "<group>"; };
+		24C22C360353A7C444EFDC48317830C8 /* Pods-Rudder-AppCenter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-AppCenter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		263CB1594FE24FEB9A8A8FC40CD3EB77 /* Pods-Rudder-AppCenter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rudder-AppCenter_Example-frameworks.sh"; sourceTree = "<group>"; };
+		28B1E4BB065D0B9D95064A54A81B5661 /* Pods-Rudder-AppCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-AppCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2DC336D37C515A6DC41662FA1426A7FF /* Rudder-AppCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Rudder-AppCenter.debug.xcconfig"; sourceTree = "<group>"; };
+		362E9D71648EFBE5B8D51879E3F2701A /* Pods-Rudder-AppCenter_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-AppCenter_Tests-Info.plist"; sourceTree = "<group>"; };
+		3E7ABEEF6A4F11F9F37628030C8E4295 /* Pods-Rudder-AppCenter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rudder-AppCenter_Example-umbrella.h"; sourceTree = "<group>"; };
+		47CE4214E667B2AC305AE4D98B26B3CF /* Rudder_AppCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rudder_AppCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C732B99092EC231DA8B158BA18B897D /* Pods_Rudder_AppCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rudder_AppCenter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6063B5489D32B206ED47D9F6D4DD6E0C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		616DC249F7B255CD346892786A89F9C3 /* Pods-Rudder-AppCenter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rudder-AppCenter_Tests-dummy.m"; sourceTree = "<group>"; };
+		70D969C315B5FEE1315478F6F0B956CF /* Rudder-AppCenter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "Rudder-AppCenter.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7F270C932D812CD41343B876C5D09204 /* Pods-Rudder-AppCenter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-AppCenter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8623687F7C08703C8AC0FC6C3AD6BDF6 /* Pods-Rudder-AppCenter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rudder-AppCenter_Example-dummy.m"; sourceTree = "<group>"; };
+		8646FB4B9E0221B6FC32A4ABC8C59430 /* Rudder-AppCenter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Rudder-AppCenter-Info.plist"; sourceTree = "<group>"; };
+		885F6930961870D86C2C513EE1600577 /* Rudder-AppCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rudder-AppCenter-dummy.m"; sourceTree = "<group>"; };
+		8A073717F5EDE5AFF5B711ADE218F529 /* Pods-Rudder-AppCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-AppCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E9DC39ACE4F8F757A48E15C7778936A /* Rudder-AppCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Rudder-AppCenter.release.xcconfig"; sourceTree = "<group>"; };
+		8F69A178A0C1B2E1CCF1A6E485E15E2E /* Pods-Rudder-AppCenter_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-AppCenter_Example-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FCDDE5FEE897EDF2C89EFE4F91E8A2B /* Pods-Rudder-AppCenter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rudder-AppCenter_Example.modulemap"; sourceTree = "<group>"; };
+		A6C861541C417926817EECA8B62E391B /* Pods-Rudder-AppCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-AppCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A8CD4BA490AF6FBA32890363931BB422 /* Pods-Rudder-AppCenter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rudder-AppCenter_Tests-umbrella.h"; sourceTree = "<group>"; };
+		AA399F947DFBF627C320CBDAB63EAA4F /* Rudder-AppCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rudder-AppCenter-umbrella.h"; sourceTree = "<group>"; };
+		B8B4E35B91CD66CEA8B6F968EA864118 /* Pods-Rudder-AppCenter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rudder-AppCenter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CFE8AD93A56F7017A37E5C87B245D743 /* Pods-Rudder-AppCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-AppCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DC5A3AE526B9AF5FA04A0AAC9AA73756 /* Rudder-AppCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Rudder-AppCenter.modulemap"; sourceTree = "<group>"; };
+		EA7D89CB310A97A6C3FA54FC573C5905 /* Pods-Rudder-AppCenter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rudder-AppCenter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62C49540EC9C7FF0BB4ED6B89F695A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				007D9D9474B64A02005E91874A7A4607 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6828AD5E4CAD78748FB586A4278174DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC9ABE589A84CE13F8E267D18ECDD64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD83B59717E65F23E2079D64F22353EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4514FF80D166EB2561304A5A887619E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0069584678BDB0D62509BFC559B144AA /* Rudder-AppCenter */ = {
+			isa = PBXGroup;
+			children = (
+				6087A79B0BEC2C18E615DC2ED1D0EBBE /* Pod */,
+				6B0ECAC41B19F7A6F0CC24F2C8D4F1FB /* Support Files */,
+				11C6052A25AE17C300F74ED8 /* RudderAppCenterFactory.h */,
+				11C6052B25AE17C300F74ED8 /* RudderAppCenterFactory.m */,
+				11C6053125AE17DC00F74ED8 /* RudderAppCenterIntegration.h */,
+				11C6053225AE17DC00F74ED8 /* RudderAppCenterIntegration.m */,
+			);
+			name = "Rudder-AppCenter";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		13A3C24D33AD70200B6CDF38DA22E268 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0069584678BDB0D62509BFC559B144AA /* Rudder-AppCenter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1D7D4724D5172313404E7C7FB8C29F59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C732B99092EC231DA8B158BA18B897D /* Pods_Rudder_AppCenter_Example.framework */,
+				21F1DEC05B1B7AF1AE470D637B77A92B /* Pods_Rudder_AppCenter_Tests.framework */,
+				47CE4214E667B2AC305AE4D98B26B3CF /* Rudder_AppCenter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2735CE89CA4BF301081A4E239821D551 /* Pods-Rudder-AppCenter_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF46EFC59AF2A1389912E8730FB288 /* Pods-Rudder-AppCenter_Tests.modulemap */,
+				B8B4E35B91CD66CEA8B6F968EA864118 /* Pods-Rudder-AppCenter_Tests-acknowledgements.markdown */,
+				7F270C932D812CD41343B876C5D09204 /* Pods-Rudder-AppCenter_Tests-acknowledgements.plist */,
+				616DC249F7B255CD346892786A89F9C3 /* Pods-Rudder-AppCenter_Tests-dummy.m */,
+				362E9D71648EFBE5B8D51879E3F2701A /* Pods-Rudder-AppCenter_Tests-Info.plist */,
+				A8CD4BA490AF6FBA32890363931BB422 /* Pods-Rudder-AppCenter_Tests-umbrella.h */,
+				8A073717F5EDE5AFF5B711ADE218F529 /* Pods-Rudder-AppCenter_Tests.debug.xcconfig */,
+				A6C861541C417926817EECA8B62E391B /* Pods-Rudder-AppCenter_Tests.release.xcconfig */,
+			);
+			name = "Pods-Rudder-AppCenter_Tests";
+			path = "Target Support Files/Pods-Rudder-AppCenter_Tests";
+			sourceTree = "<group>";
+		};
+		521C256168685A11824E9851C936317B /* Pods-Rudder-AppCenter_Example */ = {
+			isa = PBXGroup;
+			children = (
+				9FCDDE5FEE897EDF2C89EFE4F91E8A2B /* Pods-Rudder-AppCenter_Example.modulemap */,
+				EA7D89CB310A97A6C3FA54FC573C5905 /* Pods-Rudder-AppCenter_Example-acknowledgements.markdown */,
+				24C22C360353A7C444EFDC48317830C8 /* Pods-Rudder-AppCenter_Example-acknowledgements.plist */,
+				8623687F7C08703C8AC0FC6C3AD6BDF6 /* Pods-Rudder-AppCenter_Example-dummy.m */,
+				263CB1594FE24FEB9A8A8FC40CD3EB77 /* Pods-Rudder-AppCenter_Example-frameworks.sh */,
+				8F69A178A0C1B2E1CCF1A6E485E15E2E /* Pods-Rudder-AppCenter_Example-Info.plist */,
+				3E7ABEEF6A4F11F9F37628030C8E4295 /* Pods-Rudder-AppCenter_Example-umbrella.h */,
+				CFE8AD93A56F7017A37E5C87B245D743 /* Pods-Rudder-AppCenter_Example.debug.xcconfig */,
+				28B1E4BB065D0B9D95064A54A81B5661 /* Pods-Rudder-AppCenter_Example.release.xcconfig */,
+			);
+			name = "Pods-Rudder-AppCenter_Example";
+			path = "Target Support Files/Pods-Rudder-AppCenter_Example";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		58BEA5A5FCE43ECA884B2F3EF684647E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				521C256168685A11824E9851C936317B /* Pods-Rudder-AppCenter_Example */,
+				2735CE89CA4BF301081A4E239821D551 /* Pods-Rudder-AppCenter_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6087A79B0BEC2C18E615DC2ED1D0EBBE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6063B5489D32B206ED47D9F6D4DD6E0C /* LICENSE */,
+				1ACA1A1160C16425E92B9E2EFAF1664A /* README.md */,
+				70D969C315B5FEE1315478F6F0B956CF /* Rudder-AppCenter.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6B0ECAC41B19F7A6F0CC24F2C8D4F1FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC5A3AE526B9AF5FA04A0AAC9AA73756 /* Rudder-AppCenter.modulemap */,
+				885F6930961870D86C2C513EE1600577 /* Rudder-AppCenter-dummy.m */,
+				8646FB4B9E0221B6FC32A4ABC8C59430 /* Rudder-AppCenter-Info.plist */,
+				23241BFB4383C9DD106DFEA7CD1D9336 /* Rudder-AppCenter-prefix.pch */,
+				AA399F947DFBF627C320CBDAB63EAA4F /* Rudder-AppCenter-umbrella.h */,
+				2DC336D37C515A6DC41662FA1426A7FF /* Rudder-AppCenter.debug.xcconfig */,
+				8E9DC39ACE4F8F757A48E15C7778936A /* Rudder-AppCenter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Rudder-AppCenter";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				13A3C24D33AD70200B6CDF38DA22E268 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1D7D4724D5172313404E7C7FB8C29F59 /* Products */,
+				58BEA5A5FCE43ECA884B2F3EF684647E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		752FC457E58E7607D8A37ABB766497CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C6052C25AE17C300F74ED8 /* RudderAppCenterFactory.h in Headers */,
+				11C6053325AE17DC00F74ED8 /* RudderAppCenterIntegration.h in Headers */,
+				542077416A7A4460D1FCAE67F7ADF887 /* Pods-Rudder-AppCenter_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F258512D34754DD552F8C64B1515943 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97746DED1E318795B6185024EC1359F9 /* Pods-Rudder-AppCenter_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CA53856BD79DA0ECEFD3AF2E7E802D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EC39E310BF408D35A4DDB5D84E690AB /* Rudder-AppCenter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		15519E0CC021D7DF834A08A37C0CD32D /* Rudder-AppCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C58744E89464073C9044C916EFCB5F33 /* Build configuration list for PBXNativeTarget "Rudder-AppCenter" */;
+			buildPhases = (
+				E6CA53856BD79DA0ECEFD3AF2E7E802D /* Headers */,
+				3194904450162DFEDEE7E628B2CC3EBF /* Sources */,
+				6828AD5E4CAD78748FB586A4278174DB /* Frameworks */,
+				0CF0C861A7A93F247F9AE8376689683A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rudder-AppCenter";
+			productName = "Rudder-AppCenter";
+			productReference = 47CE4214E667B2AC305AE4D98B26B3CF /* Rudder_AppCenter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C5B2DF4F4BE01377110C24B8B56C108F /* Pods-Rudder-AppCenter_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B9D7055F0F187DDEEC9BCDC77481CC3 /* Build configuration list for PBXNativeTarget "Pods-Rudder-AppCenter_Example" */;
+			buildPhases = (
+				752FC457E58E7607D8A37ABB766497CE /* Headers */,
+				08D1591D2A61F5DFE6FF3243D673C790 /* Sources */,
+				CD83B59717E65F23E2079D64F22353EF /* Frameworks */,
+				BDDC8530F5EE7D03AD64D064CB2316FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B0EEFBC414BB2DD88948ADBF893BB45 /* PBXTargetDependency */,
+			);
+			name = "Pods-Rudder-AppCenter_Example";
+			productName = "Pods-Rudder-AppCenter_Example";
+			productReference = 4C732B99092EC231DA8B158BA18B897D /* Pods_Rudder_AppCenter_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0FA8862E99A18E3823AD94E9FBB066F /* Pods-Rudder-AppCenter_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE324DE82917F744AE59289FD6F5F69 /* Build configuration list for PBXNativeTarget "Pods-Rudder-AppCenter_Tests" */;
+			buildPhases = (
+				7F258512D34754DD552F8C64B1515943 /* Headers */,
+				E3BF63B3E90A077369DD392B3E7488A7 /* Sources */,
+				62C49540EC9C7FF0BB4ED6B89F695A11 /* Frameworks */,
+				90D67E34552C28D1631BB23676DB6CC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0A6793DFC02FB54074DD8FCCC7905D9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Rudder-AppCenter_Tests";
+			productName = "Pods-Rudder-AppCenter_Tests";
+			productReference = 21F1DEC05B1B7AF1AE470D637B77A92B /* Pods_Rudder_AppCenter_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1D7D4724D5172313404E7C7FB8C29F59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5B2DF4F4BE01377110C24B8B56C108F /* Pods-Rudder-AppCenter_Example */,
+				E0FA8862E99A18E3823AD94E9FBB066F /* Pods-Rudder-AppCenter_Tests */,
+				15519E0CC021D7DF834A08A37C0CD32D /* Rudder-AppCenter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CF0C861A7A93F247F9AE8376689683A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D67E34552C28D1631BB23676DB6CC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDC8530F5EE7D03AD64D064CB2316FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08D1591D2A61F5DFE6FF3243D673C790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4739674EFC5E01D906B40AB283E1C54B /* Pods-Rudder-AppCenter_Example-dummy.m in Sources */,
+				11C6052D25AE17C300F74ED8 /* RudderAppCenterFactory.m in Sources */,
+				11C6053425AE17DC00F74ED8 /* RudderAppCenterIntegration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3194904450162DFEDEE7E628B2CC3EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D523B68DC9161D054DDBDA5B972A24 /* Rudder-AppCenter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BF63B3E90A077369DD392B3E7488A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E7B87A2D4512A1234F413DA8050FFE /* Pods-Rudder-AppCenter_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B0EEFBC414BB2DD88948ADBF893BB45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Rudder-AppCenter";
+			target = 15519E0CC021D7DF834A08A37C0CD32D /* Rudder-AppCenter */;
+			targetProxy = 38CCA7160666517AD21CDD249A70CDEC /* PBXContainerItemProxy */;
+		};
+		B0A6793DFC02FB54074DD8FCCC7905D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Rudder-AppCenter_Example";
+			target = C5B2DF4F4BE01377110C24B8B56C108F /* Pods-Rudder-AppCenter_Example */;
+			targetProxy = FEFFD04FFB15513BDC700A054CF861DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2BC3B717C3791CE7B3CB659142010842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A073717F5EDE5AFF5B711ADE218F529 /* Pods-Rudder-AppCenter_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-AppCenter_Tests/Pods-Rudder-AppCenter_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-AppCenter_Tests/Pods-Rudder-AppCenter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71C3E3B921C3BDCDD7FA426FE190A0BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28B1E4BB065D0B9D95064A54A81B5661 /* Pods-Rudder-AppCenter_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-AppCenter_Example/Pods-Rudder-AppCenter_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-AppCenter_Example/Pods-Rudder-AppCenter_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B131A57D1ACF237361D835E86D0BB8C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C861541C417926817EECA8B62E391B /* Pods-Rudder-AppCenter_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-AppCenter_Tests/Pods-Rudder-AppCenter_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-AppCenter_Tests/Pods-Rudder-AppCenter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3D45BCB24BA69FF86A4208F57E244F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DC336D37C515A6DC41662FA1426A7FF /* Rudder-AppCenter.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Rudder-AppCenter/Rudder-AppCenter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rudder-AppCenter/Rudder-AppCenter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Rudder-AppCenter/Rudder-AppCenter.modulemap";
+				PRODUCT_MODULE_NAME = Rudder_AppCenter;
+				PRODUCT_NAME = Rudder_AppCenter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CD6E9938331DB07903469EE3933186BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9DC39ACE4F8F757A48E15C7778936A /* Rudder-AppCenter.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Rudder-AppCenter/Rudder-AppCenter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rudder-AppCenter/Rudder-AppCenter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Rudder-AppCenter/Rudder-AppCenter.modulemap";
+				PRODUCT_MODULE_NAME = Rudder_AppCenter;
+				PRODUCT_NAME = Rudder_AppCenter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE458E5735846B0007504A18858C3A33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE8AD93A56F7017A37E5C87B245D743 /* Pods-Rudder-AppCenter_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-AppCenter_Example/Pods-Rudder-AppCenter_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-AppCenter_Example/Pods-Rudder-AppCenter_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AE324DE82917F744AE59289FD6F5F69 /* Build configuration list for PBXNativeTarget "Pods-Rudder-AppCenter_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BC3B717C3791CE7B3CB659142010842 /* Debug */,
+				B131A57D1ACF237361D835E86D0BB8C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B9D7055F0F187DDEEC9BCDC77481CC3 /* Build configuration list for PBXNativeTarget "Pods-Rudder-AppCenter_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE458E5735846B0007504A18858C3A33 /* Debug */,
+				71C3E3B921C3BDCDD7FA426FE190A0BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C58744E89464073C9044C916EFCB5F33 /* Build configuration list for PBXNativeTarget "Rudder-AppCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3D45BCB24BA69FF86A4208F57E244F7 /* Debug */,
+				CD6E9938331DB07903469EE3933186BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

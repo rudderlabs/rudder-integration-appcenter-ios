@@ -1,0 +1,6 @@
+framework module Rudder_AppCenter {
+  umbrella header "Rudder-AppCenter-umbrella.h"
+
+  export *
+  module * { export * }
+}
