@@ -7,15 +7,59 @@
 //
 
 #import "_AppDelegate.h"
+#import <Rudder/Rudder.h>
+@import AppCenter;
+@import AppCenterAnalytics;
+@import AppCenterCrashes;
+#import <CoreLocation/CoreLocation.h>
+
+@interface _AppDelegate () <CLLocationManagerDelegate>
+@property(nonatomic) CLLocationManager *locationManager;
+@end
 
 @implementation _AppDelegate
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [MSACAppCenter start:@"c48e5ee6-98f5-426b-adc8-d431f388c084" withServices:@[
+      [MSACAnalytics class],
+      [MSACCrashes class]
+    ]];
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+      self.locationManager.delegate = self;
+      self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
+      [self.locationManager requestWhenInUseAuthorization];
+    
+    NSDictionary *properties = @{@"Category" : @"Music", @"FileName" : @"favorite.avi"};
+    [MSACAnalytics trackEvent:@"Video clicked" withProperties: properties];
+    
     return YES;
 }
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+  if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+    [manager requestLocation];
+  }
+}
 
+- (void)locationManger:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
+  CLLocation *location = [locations lastObject];
+  CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+  [geocoder reverseGeocodeLocation:location
+                 completionHandler:^(NSArray *placemarks, NSError *error) {
+                   if (placemarks.count == 0 || error)
+                     return;
+                   CLPlacemark *pm = [placemarks firstObject];
+                   [MSACAppCenter setCountryCode:pm.ISOcountryCode];
+  }];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+  NSLog(@"Failed to find user's location: \(error.localizedDescription)");
+}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

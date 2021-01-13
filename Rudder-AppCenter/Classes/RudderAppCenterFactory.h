@@ -6,10 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Rudder/Rudder.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RudderAppCenterFactory : NSObject
+@interface RudderAppCenterFactory : NSObject<RSIntegrationFactory>
++ (instancetype) instance;
 
 @end
 

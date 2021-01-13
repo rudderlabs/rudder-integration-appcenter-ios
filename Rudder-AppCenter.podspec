@@ -32,6 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Rudder-AppCenter/Classes/**/*'
   
+  s.dependency 'AppCenter'
+  s.dependency 'Rudder'
+  
   # s.resource_bundles = {
   #   'Rudder-AppCenter' => ['Rudder-AppCenter/Assets/*.png']
   # }

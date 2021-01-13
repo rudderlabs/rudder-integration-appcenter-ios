@@ -21,6 +21,8 @@
 
 /* Begin PBXBuildFile section */
 		0014E9283DBB3FF366AACC04278EFFDB /* RSTrackPropertyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FC261BF1290E732DEAEBD72E7FE3F /* RSTrackPropertyBuilder.m */; };
+		007D9D9474B64A02005E91874A7A4607 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCEF3BF09A68C1F0E179C87F706E47B /* Foundation.framework */; };
+		02711B5171B3AD2D8395EE40A339DDB8 /* Rudder-AppCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBD968133846DFCDC3735C0A4199E4 /* Rudder-AppCenter-dummy.m */; };
 		043C7F1F802CED60A17BC2B90D84D00C /* RSScreenPropertyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2045BDA20C1BAA8AFDD547D59ACC63 /* RSScreenPropertyBuilder.m */; };
 		04F4AE8D911067EFCB3CEF309AC7624C /* RSTraitsBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 03657AB618F2BE5EB78C8D6453EE00B9 /* RSTraitsBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05E56AB02ACFD51AE49779ECF657CA2F /* RSCheckoutStartedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8B3C9616154376461C149E782DB556 /* RSCheckoutStartedEvent.m */; };
@@ -30,6 +32,7 @@
 		09630DA161BA71321E296D23267FDD9A /* RSProductReviewedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC18DDCF90CFC90A9589813CC4876DF /* RSProductReviewedEvent.m */; };
 		0A523B7FADA8EF5C1975405C9D473EB9 /* RSECommerceProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = CB49C6EF7B3544839B317F473B0F00D9 /* RSECommerceProduct.m */; };
 		0B3A21C1CE147AD80DB438A5C4382E5C /* RSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA1635231DF93B06FCBC8948E9BCF6 /* RSContext.m */; };
+		0B7254D1DACEB5A77387997A5BAAC8A3 /* RudderAppCenterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E584BDF3782D011FFAB9B0B95A4B47D /* RudderAppCenterFactory.m */; };
 		0C26FD2EF27EA21282E572A026B015D6 /* RSDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC6E1F6F2DB48A6E27B609498CDC660 /* RSDeviceInfo.m */; };
 		0CF9BB76787D32E9088C721BC509A5BD /* RSConfigBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E8FD1856E7B83AC3852CE382ABB2A3 /* RSConfigBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E8BEE719B318B29DC0576D9504462D0 /* RSCouponRemovedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C292803902DB801E0DCB850EE15828 /* RSCouponRemovedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -74,24 +77,21 @@
 		428C1984B37EA5BE3928C6BE74D05A51 /* RSDBMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 929E3413F052F24A598D1B8576CE0C62 /* RSDBMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		444680FCFEE05058FB6A76940A5BB09F /* RSECommercePromotionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EED9225672B793A43B87F5A015A22823 /* RSECommercePromotionBuilder.m */; };
 		44B1D13F6DBD01506795962601C5BC97 /* RSOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 01B5D9155FEA8D3CCA9EC7E4DF5BEA85 /* RSOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4514FF80D166EB2561304A5A887619E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		462E2B1EA626826D15849A0BDD700CE3 /* RSProductSearchedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BA899375AAA38518F5E40617B653343 /* RSProductSearchedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4739674EFC5E01D906B40AB283E1C54B /* Pods-Rudder-AppCenter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B76281457D0AD586005D3788C6BAFF1 /* Pods-Rudder-AppCenter_Example-dummy.m */; };
+		47166627E352858F69E6212AC4B3911E /* RudderAppCenterIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 22221AD34E72DC11FB9A087115F76CDB /* RudderAppCenterIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		498228CEB3D106E570ED539A7E973FA3 /* RSCouponEnteredEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A850C967878495D885C76D11F293AAFC /* RSCouponEnteredEvent.m */; };
 		4A15C0A45B88A34FAA335DBADFB1C9E4 /* RSProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 80A39655DFB229CA784FE687361428C7 /* RSProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B28E8DC07E52C8A6A3FCAA049E5E363 /* RSEventRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AC688EAAC8A93E8CF47D0BBFCAE8FC /* RSEventRepository.m */; };
+		4C8BCE4A2483FA25D0EA6B92331451CD /* Rudder-AppCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EC93D452FFCCA238B2EFFA59304F74A /* Rudder-AppCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F70ACD42854624A3BB0C4E562D705B5 /* RSECommerceCart.h in Headers */ = {isa = PBXBuildFile; fileRef = DE0A6849B5FC1FEEB734C0C7CFF8B02B /* RSECommerceCart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FCBC8BF5F6C623FDFC5ADBCCABDE890 /* RSPromotionViewedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA92856804B2576E5EFC7728B653223 /* RSPromotionViewedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		503941D0FE22F4CF200F72D6DB7A41F2 /* RSECommerceEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = D71169D6D11B8B347F31C4CE425EA351 /* RSECommerceEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		509B07754FDB950FC737A190E0A530A2 /* RSECommerceCartBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B010594929F3C8EDA2A0A995DC1D90 /* RSECommerceCartBuilder.m */; };
-		50BFF8B6892CAD5EE60FE0657A117108 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		50BFF8B6892CAD5EE60FE0657A117108 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCEF3BF09A68C1F0E179C87F706E47B /* Foundation.framework */; };
 		51667354260061FFA5F76CE821694516 /* RSDBPersistentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC68E72E59F0802261240B9F51A5622 /* RSDBPersistentManager.m */; };
-		5187D1D2A4D76E8A4A7B6EB8AB0C9F2D /* RudderAppCenterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E584BDF3782D011FFAB9B0B95A4B47D /* RudderAppCenterFactory.m */; };
 		51BA610334084AD03AE9552CF86D4713 /* RSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 457F376707390B03E122E5D8CA517ADE /* RSConstants.m */; };
 		5360DE31F09F5FBFAB4581B538F18469 /* RSProductListFilteredEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 34889262E0964911AF946500DD9935E8 /* RSProductListFilteredEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		536749D98DFD211D519643FC7C41D091 /* RSProductClickedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EEEBC46987BDC3D75D28594CFA384ED /* RSProductClickedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		542077416A7A4460D1FCAE67F7ADF887 /* Pods-Rudder-AppCenter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44EFE4E04AA0441342B07CA1D98F2741 /* Pods-Rudder-AppCenter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		549B8369EBDD35A48737279F2B2A9FAD /* Rudder-AppCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBD968133846DFCDC3735C0A4199E4 /* Rudder-AppCenter-dummy.m */; };
 		5595C358B83E43A57CF68E6A6E4D2E9A /* RSPromotionClickedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B929DB0526462BC2F804D3ECFABF3877 /* RSPromotionClickedEvent.m */; };
 		58AEAF266E3B37EA4C76F356FDDC69D4 /* RSProductRemovedFromWishListEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 784566CC5E8B3A6211121E1672516393 /* RSProductRemovedFromWishListEvent.m */; };
 		5A79C7DE1F0D9BC7DC906F736CA404A7 /* RSECommerceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E43DE296CFB42899172E95173BC48A /* RSECommerceFilter.m */; };
@@ -101,9 +101,10 @@
 		5C51D07B34294A1181C08A691897C1D8 /* RSServerDestinationDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 70E25B5F18F239DB2A83BBD8192CB333 /* RSServerDestinationDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CB279AC49BE4BDDCA6C36431897CEE3 /* RSProductAddedToWishListEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 746324857777C131E28645AD6621E160 /* RSProductAddedToWishListEvent.m */; };
 		5EB62D33114CE69170EF5029078CCBDC /* RSECommerceCheckout.h in Headers */ = {isa = PBXBuildFile; fileRef = EF8ADA655DEF09D27CB0CB6F224985B6 /* RSECommerceCheckout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F649316B4165858BC63B904B4AC824F /* RudderAppCenterIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 22221AD34E72DC11FB9A087115F76CDB /* RudderAppCenterIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6026DD4CF1C47A37DF215AE6F2684022 /* RSPagePropertyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D600A79BBCC51483C2117D16A44A5DA /* RSPagePropertyBuilder.m */; };
+		656ED7832C1C3443E89F0E741B2E7DB2 /* RudderAppCenterIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 06105F67B6F709E28DAD4134D6A3F04B /* RudderAppCenterIntegration.m */; };
 		664E217F127883986787F939A12A973F /* RSCheckoutStepCompletedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3B8D7048A8173FC16785003803217E /* RSCheckoutStepCompletedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66A32BFE180A59E94E9F0ADA7F65643D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCEF3BF09A68C1F0E179C87F706E47B /* Foundation.framework */; };
 		66BCCDA89CA7455725FD6F4062C5A88F /* UIViewController+RSScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 5087C8C636C934388062B4AFB84EBE60 /* UIViewController+RSScreen.m */; };
 		6A35B9CA0719A5D935FAB717ACEA2FBF /* RSECommerceCouponBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E1C4D80A5C4A0D6435BEA047A947B7 /* RSECommerceCouponBuilder.m */; };
 		6D09DDE0DB79E4170A62012C18F1FEDE /* RSServerConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AA003F2A268A394C939340546C5AB7 /* RSServerConfigManager.m */; };
@@ -116,26 +117,24 @@
 		733C0139EB66BED993B0651F0C592325 /* RSECommerceCartBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 58682E41F0890A8A17EB08699F79B60A /* RSECommerceCartBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		753306BF3D9A2EA32C40AC215DB44C08 /* RSECommerceParamNames.h in Headers */ = {isa = PBXBuildFile; fileRef = F43B3CBF726BE83171E75BAD4EBC4C0F /* RSECommerceParamNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		759F58E7FF7FB8BB1C3520FFB1352195 /* RSECommerceSort.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FD5D2F4C067EBFA54079D2A679E755 /* RSECommerceSort.m */; };
-		76CE6CF02054AD75AE7646AD77C5BC58 /* Pods-Rudder-AppCenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AED6EB6D0D1E15C5FE9B1EEF5D048DC /* Pods-Rudder-AppCenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B805D41347236DB95BEC3AD3E2EFE1E /* RSPreferenceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ADCC8E914C8293EADFE7690726447055 /* RSPreferenceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7BEDBDDB63AF10B61ACA783A41F2BCFD /* RudderAppCenterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 864270A4466294315CD6DE60E4B07A4D /* RudderAppCenterFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C25BC933E12CF984ED22004535E649C /* RSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEB0B22240DF11B7433892E3E4F6A28 /* RSConfig.m */; };
 		7DAC633A6389887DB24FE761F7B5944F /* RSECommerceOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 60A5EBA73D6161561E0CC5709174000B /* RSECommerceOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F9A4CB2501BF62CCBB5827F434F17DB /* RSECommerceCheckoutBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = C1059BFC0F28B5C98FE5AA977F80283B /* RSECommerceCheckoutBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80984AF98C03E2F98A6CD74DCC2B74BC /* Rudder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB66F3DE479130C10EF75926F07045C /* Rudder.framework */; };
 		812E045F552CC7A32ED6FA35257F75B7 /* RSServerDestinationDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E23B5CB307F77E27B4A7B5024F83E1 /* RSServerDestinationDefinition.m */; };
-		82319E7B8C537E34244BA620F785E399 /* RudderAppCenterIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 06105F67B6F709E28DAD4134D6A3F04B /* RudderAppCenterIntegration.m */; };
 		850D684A4CC58E06B9B5624FBBB34017 /* RSProductListViewedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4469D36ABD2DC12537CC0BA6FCF827 /* RSProductListViewedEvent.m */; };
 		85204B00B7BCB88126441B72F4BE5B33 /* RSECommerceOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D04E1F0B3BF46D376AFE3393B145E7B /* RSECommerceOrder.m */; };
 		87DA827516E40A430A31F67B02C86FB8 /* RSConfigBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 196BCBCCBFCDFD0793D2F49EFFDF452C /* RSConfigBuilder.m */; };
 		8A6CA9B9789F553A6D57926A361B5DFE /* RSOrderRefundedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 69D52D6F257491FAFC81BAEE2D0DAFB5 /* RSOrderRefundedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D255E6FF6EEE0EA21D392EFA58BCF4D /* RSContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 35271FD90B8B1A1255D5159C1480A24C /* RSContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D55DF04E9D974679A00BE1E3F292FDB /* RSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DB96A12496CFB08058F2CD1359B75B /* RSClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FBD0D65282EFD5C06BFF4B09C2A2885 /* Pods-Rudder-AppCenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41491AB4E06408A7AD786E7CAFC44397 /* Pods-Rudder-AppCenter_Tests-dummy.m */; };
 		917DD688C734CAC0140349C8874A982D /* RSProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD21930505D175C636613C0ECC9D90 /* RSProperty.m */; };
 		92CDC94B4D646B3D03CCC16080AE5564 /* RSECommerceFilterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EA45C2EA73512107C7C7EBEFEC1B2849 /* RSECommerceFilterBuilder.m */; };
 		93A3A0DAEFA5DA4D82E20743D26C9ECB /* RSECommerceWishList.h in Headers */ = {isa = PBXBuildFile; fileRef = 07834ADF4AB68E4F470EB2B406E011F4 /* RSECommerceWishList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94A26EFE83F0E1F19B37F5039BB6585B /* RSProductAddedToWishListEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C82CF5B4E67CE052A7A711D6328A65 /* RSProductAddedToWishListEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		972DFA9CCAEF2C8264FF8228E9D92D1A /* RSMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 98DCB363E1849B8BAE241702D1C3DD95 /* RSMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97746DED1E318795B6185024EC1359F9 /* Pods-Rudder-AppCenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8CD4BA490AF6FBA32890363931BB422 /* Pods-Rudder-AppCenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D70E675F859E84072253AA9C5E5FDBE /* RSOrderUpdatedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C2505D2397F0E37A72F6CB84969F4C34 /* RSOrderUpdatedEvent.m */; };
 		9DDC17CAB7218C29BAC89DD30B6E802A /* RSCheckoutStepCompletedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3522C82EFF5A2668849BDF34613181 /* RSCheckoutStepCompletedEvent.m */; };
 		9FC2815B1B965D7874B896322670D48C /* RSECommerceCart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9AA6CC27DDC2F6C2D7B403723FC736 /* RSECommerceCart.m */; };
@@ -143,6 +142,7 @@
 		A06406F021DE22AC0A0D424DCDD06BD5 /* RSECommerceOrderBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A696E403CE3505127BA1E234A7E81E3 /* RSECommerceOrderBuilder.m */; };
 		A29E8BBBF872B7A9B29A6C2AC4D17FD6 /* RSScreenPropertyBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF8E2CAEFDB28E7E648CDD7ACC6638F /* RSScreenPropertyBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3D2FD42CBE4ACE4372FA5C1DCDA5B64 /* RSECommerceCouponBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = F12B8D664A7F251A56D235D7C2618E9A /* RSECommerceCouponBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4BC91C6BCA920765408B1809E8D6E29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCEF3BF09A68C1F0E179C87F706E47B /* Foundation.framework */; };
 		A5728846D2981CD80A51785236696ABE /* RSECommerceSort.h in Headers */ = {isa = PBXBuildFile; fileRef = 06CB9D74DAFDDE70AD394BF3224EE8CD /* RSECommerceSort.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6CD5ADB40B6CABB5B48BFB80EC4CE64 /* RSPromotionViewedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0AE6552B8A6B390A466118063EE17F /* RSPromotionViewedEvent.m */; };
 		AD2B567D7F6424D6E217C8522BE440C9 /* RSECommerceProductBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F91878169DD58A66E604C543882C9A /* RSECommerceProductBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -167,9 +167,7 @@
 		C408476CC0FA100C1D97820A1DFC8E59 /* RSCouponAppliedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD89A39A8EFC3A3ACC4357DA5EB871D /* RSCouponAppliedEvent.m */; };
 		C4B40B7866BD330EFCA7E2D28CDAAEFE /* RSEventRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 678937959434811A0D32E8E6AECB65D0 /* RSEventRepository.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8E69C32623354B7F3E9FD6DEE4A4719 /* RSProductReviewedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = C664A9CF2B560A1845E326D48238BCF2 /* RSProductReviewedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C94EADF504EB2E7825DABFD4460B8DB0 /* Rudder-AppCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EC93D452FFCCA238B2EFFA59304F74A /* Rudder-AppCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C95676F7C8544543E8B082AC4CE07FCF /* RSCouponAppliedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 66D8E15BC9C4498664EDC630998F6BE0 /* RSCouponAppliedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CACFA3E4E9258DD488BEEBA82837B8CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		CCB69516ABDCFA2E6CE5AB6EA383CD76 /* RSECommerceFilterBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = ABFD18D484A6492E5F8EDEAFF071FDE1 /* RSECommerceFilterBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD9A9D1DEE16A266FE42FB20E4E72F6A /* RSECommerceWishList.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C47AD1634ECA7D050234F813F7F1E0 /* RSECommerceWishList.m */; };
 		CEBFCD32B14B096677E23F507B456D97 /* RSPaymentInfoEnteredEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C9AEFB0B89702938D9220979AE5F74 /* RSPaymentInfoEnteredEvent.m */; };
@@ -179,18 +177,20 @@
 		D1BEE56CA404C67C80E724AAA85D4881 /* RSProductClickedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C80A1BFB99EDF121C7FEAA1D48AA80 /* RSProductClickedEvent.m */; };
 		D1FBCB3B80135932C858358682D0F0D2 /* RSECommerceCoupon.m in Sources */ = {isa = PBXBuildFile; fileRef = 393982ABB90EF6B35D3B5DA75FE5904A /* RSECommerceCoupon.m */; };
 		D36B7448F9F142DC66C92F0C15F92494 /* RSServerConfigSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E1685267A14BE088A7544C414CAB7E7C /* RSServerConfigSource.m */; };
+		D3E7B87A2D4512A1234F413DA8050FFE /* Pods-Rudder-AppCenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 616DC249F7B255CD346892786A89F9C3 /* Pods-Rudder-AppCenter_Tests-dummy.m */; };
 		D68EEDEAF1506739730E3473DA715DE2 /* RSCouponEnteredEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = DB8E1616A0DA280FDAC6630058646738 /* RSCouponEnteredEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9D20B7D01C46BBBE74FC2BE7D3C4AEA /* RSTraitsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 36884986F4E6DF50DC170B59B1238FC3 /* RSTraitsBuilder.m */; };
 		DAC5729198F2DAA994E7E3B4E0228EAC /* RSMessageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CB60C27F8266BC0628A4E2E87AF3E4BD /* RSMessageBuilder.m */; };
+		DDCC2B2292613D2CF4DFCA717A2FE64C /* Pods-Rudder-AppCenter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8623687F7C08703C8AC0FC6C3AD6BDF6 /* Pods-Rudder-AppCenter_Example-dummy.m */; };
 		E0ABE63A8ABD51D4A2C4F9B073AE238A /* RSProductListViewedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 81A1ABDEC2F5A4DF2BB1165669729E94 /* RSProductListViewedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E236AAA31BC9D8F0222FB91425A69614 /* RSScreenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D062C4F234F901C1C38A8F3F8B79261 /* RSScreenInfo.m */; };
 		E716309A1DEBA778561C610CA71F2940 /* RSECommerceWishListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 91854D058E17A3DC9C3D774C7071F34E /* RSECommerceWishListBuilder.m */; };
+		E8FE754D40320951766D8F20B67B26AD /* RudderAppCenterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 864270A4466294315CD6DE60E4B07A4D /* RudderAppCenterFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E941F1DAD84E0B6EB9B81F469A33776E /* RSOSInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C882917876E6A9DAF811DE8E33E2B0 /* RSOSInfo.m */; };
 		EA22189E7AD589CB7DEBCE7936047ED5 /* RSIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFAA3140F1164AD367A04250BA76F15 /* RSIntegrationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA404DC83747D184C71806F5182E2BF7 /* RSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C60DCA4622241F56FEC93E10F33289 /* RSMessage.m */; };
 		EAD2409FF9DD31FC86AF42959C1F7D0D /* RSECommerceSortBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 38F660ACB484BB545719F14F403FCEA0 /* RSECommerceSortBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEA5276BB988F172005189E7F989FA54 /* RSScreenInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 621F1303F7663E1928D3657B13AFB5D5 /* RSScreenInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF38CF33D704115AB826C743D2C67665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F0024657D0418CC03CF7CBBC5532ECAB /* RSApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DE7AE831C576706E18EB07DEDD60F1 /* RSApp.m */; };
 		F0DBEE40203765C597F0B15C64D06D63 /* RSProductSearchedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 39430A8BD9CAEA3FD23CAB4AF9DDA660 /* RSProductSearchedEvent.m */; };
 		F1414C83B2ED82628B60756C66BF64D9 /* RSECommerceCoupon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D64C377EC3E9702D18BBC6CDD44A042 /* RSECommerceCoupon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -200,37 +200,52 @@
 		F8323FBB27B22CDD5F051BC8FC63DB30 /* RSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6226105871374DD5F4E5764D6547A9 /* RSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA2195FC29C9AE73F8FE3512C0CADF26 /* RSOrderCancelledEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7755B6B6F991BAB022FA45A23E67BD1E /* RSOrderCancelledEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA6D2F35111E907C637673B078471E57 /* RSProductSharedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5735305B319C1BDC0172CD764F17122E /* RSProductSharedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAABF5E9CFFF0C7F0CDA64B487871566 /* Pods-Rudder-AppCenter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E7ABEEF6A4F11F9F37628030C8E4295 /* Pods-Rudder-AppCenter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDD41D1B36C257A440E9210F82461F69 /* RSECommercePromotion.h in Headers */ = {isa = PBXBuildFile; fileRef = B785A183984C14DA0BC59944450639B0 /* RSECommercePromotion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2BE9A42E3D57C961332B5F39AAB07038 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A3282A5B2437E609EEB85861D7ECE717;
-			remoteInfo = AppCenter;
-		};
-		53D26CCFD1B9998B4B47CF389651455D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 15519E0CC021D7DF834A08A37C0CD32D;
-			remoteInfo = "Rudder-AppCenter";
-		};
-		7C2B444174DBBBC3C09A6185EED618F3 /* PBXContainerItemProxy */ = {
+		530FE003BC46EB9FFBC02E87C74113B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F5C6323F415EBC1C6BAD0C1E271A0C4D;
 			remoteInfo = Rudder;
 		};
-		C455B3331FD53F8FFD7CE352D1162668 /* PBXContainerItemProxy */ = {
+		5BD0EBE49D1492FFE90FC1B9C508522D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3282A5B2437E609EEB85861D7ECE717;
+			remoteInfo = AppCenter;
+		};
+		747E9A5CB6566E52096BC0251FA68E40 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C5B2DF4F4BE01377110C24B8B56C108F;
 			remoteInfo = "Pods-Rudder-AppCenter_Example";
+		};
+		CDC09CDDE5983538289500772BB95E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3282A5B2437E609EEB85861D7ECE717;
+			remoteInfo = AppCenter;
+		};
+		CF27C39D8894EAEDA1335080915AED04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5C6323F415EBC1C6BAD0C1E271A0C4D;
+			remoteInfo = Rudder;
+		};
+		FE048F502A9AF0DAA62E7F34B32ECC2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15519E0CC021D7DF834A08A37C0CD32D;
+			remoteInfo = "Rudder-AppCenter";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -248,14 +263,12 @@
 		0779A15B9C5B4A7DAEFDA31F2F8A04E0 /* Rudder-AppCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Rudder-AppCenter.modulemap"; sourceTree = "<group>"; };
 		07834ADF4AB68E4F470EB2B406E011F4 /* RSECommerceWishList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceWishList.h; path = Rudder/Classes/Ecomm/RSECommerceWishList.h; sourceTree = "<group>"; };
 		08F57555919C1836AD87374A4E870BB4 /* Rudder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rudder.release.xcconfig; sourceTree = "<group>"; };
-		0A42F7286DAC036FBD05EC004312498E /* Pods-Rudder-AppCenter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rudder-AppCenter_Example-frameworks.sh"; sourceTree = "<group>"; };
 		0A696E403CE3505127BA1E234A7E81E3 /* RSECommerceOrderBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceOrderBuilder.m; path = Rudder/Classes/Ecomm/RSECommerceOrderBuilder.m; sourceTree = "<group>"; };
 		0ACFF13724BCB88A764423C26058304E /* AppCenter-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppCenter-xcframeworks.sh"; sourceTree = "<group>"; };
 		0BDB96D9B6DADD82CC69748E4173F103 /* RSConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSConstants.h; path = Rudder/Classes/RSConstants.h; sourceTree = "<group>"; };
 		0D0DF460D3C72CA4790EC222A129B862 /* RSProductViewedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductViewedEvent.h; path = Rudder/Classes/Ecomm/Events/RSProductViewedEvent.h; sourceTree = "<group>"; };
 		0EBB432EA825E0B031D4B798B0A53B0C /* Rudder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Rudder.framework; path = Rudder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8B3C9616154376461C149E782DB556 /* RSCheckoutStartedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCheckoutStartedEvent.m; path = Rudder/Classes/Ecomm/Events/RSCheckoutStartedEvent.m; sourceTree = "<group>"; };
-		113EAA63C49BC6C6191810497710787E /* Pods-Rudder-AppCenter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rudder-AppCenter_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		131588450C6DA3F1B76AF4499614425A /* RSUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSUtils.h; path = Rudder/Classes/RSUtils.h; sourceTree = "<group>"; };
 		13BF8748C891018FB3411347D6D4DDCB /* RSDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDeviceInfo.h; path = Rudder/Classes/RSDeviceInfo.h; sourceTree = "<group>"; };
 		13FC3D9ACC51FD1A5FD3C9D14F15CEEC /* RSTraits.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSTraits.m; path = Rudder/Classes/RSTraits.m; sourceTree = "<group>"; };
@@ -265,12 +278,16 @@
 		1AB8E5E32A8AFF0C2E2430E15E56C263 /* RSNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSNetwork.h; path = Rudder/Classes/RSNetwork.h; sourceTree = "<group>"; };
 		1DE191E9DA527B398D9E5D8E33C91165 /* Rudder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Rudder.h; path = Rudder/Classes/Rudder.h; sourceTree = "<group>"; };
 		1E584BDF3782D011FFAB9B0B95A4B47D /* RudderAppCenterFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderAppCenterFactory.m; path = "Rudder-AppCenter/Classes/RudderAppCenterFactory.m"; sourceTree = "<group>"; };
+		1FEF46EFC59AF2A1389912E8730FB288 /* Pods-Rudder-AppCenter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rudder-AppCenter_Tests.modulemap"; sourceTree = "<group>"; };
 		217011E057A33E25E2CFD2F7DDE1BB72 /* RSProductAddedToCartEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductAddedToCartEvent.h; path = Rudder/Classes/Ecomm/Events/RSProductAddedToCartEvent.h; sourceTree = "<group>"; };
 		21F1DEC05B1B7AF1AE470D637B77A92B /* Pods_Rudder_AppCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Rudder_AppCenter_Tests.framework; path = "Pods-Rudder-AppCenter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22221AD34E72DC11FB9A087115F76CDB /* RudderAppCenterIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderAppCenterIntegration.h; path = "Rudder-AppCenter/Classes/RudderAppCenterIntegration.h"; sourceTree = "<group>"; };
 		2369DBDD7DC42992E3057F92240239F8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		24C22C360353A7C444EFDC48317830C8 /* Pods-Rudder-AppCenter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-AppCenter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		24E8FD1856E7B83AC3852CE382ABB2A3 /* RSConfigBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSConfigBuilder.h; path = Rudder/Classes/RSConfigBuilder.h; sourceTree = "<group>"; };
+		263CB1594FE24FEB9A8A8FC40CD3EB77 /* Pods-Rudder-AppCenter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rudder-AppCenter_Example-frameworks.sh"; sourceTree = "<group>"; };
 		27E23B5CB307F77E27B4A7B5024F83E1 /* RSServerDestinationDefinition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSServerDestinationDefinition.m; path = Rudder/Classes/RSServerDestinationDefinition.m; sourceTree = "<group>"; };
+		28B1E4BB065D0B9D95064A54A81B5661 /* Pods-Rudder-AppCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-AppCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		28C9AEFB0B89702938D9220979AE5F74 /* RSPaymentInfoEnteredEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSPaymentInfoEnteredEvent.m; path = Rudder/Classes/Ecomm/Events/RSPaymentInfoEnteredEvent.m; sourceTree = "<group>"; };
 		29DEF21EA76DE237426F3053F9DB942F /* RSOrderUpdatedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSOrderUpdatedEvent.h; path = Rudder/Classes/Ecomm/Events/RSOrderUpdatedEvent.h; sourceTree = "<group>"; };
 		2AAB7DEF280A5F1D9845EBB4E7301408 /* AppCenterCrashes.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenterCrashes.xcframework; path = "AppCenter-SDK-Apple/AppCenterCrashes.xcframework"; sourceTree = "<group>"; };
@@ -279,8 +296,8 @@
 		330AB990F46C08634865CD7FAF61FED4 /* RSOrderCompletedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSOrderCompletedEvent.m; path = Rudder/Classes/Ecomm/Events/RSOrderCompletedEvent.m; sourceTree = "<group>"; };
 		339A5EA60811B4DBAE20B66918BB7B8A /* RSCouponDeniedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCouponDeniedEvent.h; path = Rudder/Classes/Ecomm/Events/RSCouponDeniedEvent.h; sourceTree = "<group>"; };
 		34889262E0964911AF946500DD9935E8 /* RSProductListFilteredEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductListFilteredEvent.h; path = Rudder/Classes/Ecomm/Events/RSProductListFilteredEvent.h; sourceTree = "<group>"; };
-		34EEDB30800C12938673C2512DA2B31B /* Pods-Rudder-AppCenter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rudder-AppCenter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		35271FD90B8B1A1255D5159C1480A24C /* RSContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSContext.h; path = Rudder/Classes/RSContext.h; sourceTree = "<group>"; };
+		362E9D71648EFBE5B8D51879E3F2701A /* Pods-Rudder-AppCenter_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-AppCenter_Tests-Info.plist"; sourceTree = "<group>"; };
 		36884986F4E6DF50DC170B59B1238FC3 /* RSTraitsBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSTraitsBuilder.m; path = Rudder/Classes/RSTraitsBuilder.m; sourceTree = "<group>"; };
 		387E9168767E0DEED9AEBF30BAE2E63B /* RSPagePropertyBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSPagePropertyBuilder.h; path = Rudder/Classes/RSPagePropertyBuilder.h; sourceTree = "<group>"; };
 		38F660ACB484BB545719F14F403FCEA0 /* RSECommerceSortBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceSortBuilder.h; path = Rudder/Classes/Ecomm/RSECommerceSortBuilder.h; sourceTree = "<group>"; };
@@ -290,15 +307,14 @@
 		3DBBD968133846DFCDC3735C0A4199E4 /* Rudder-AppCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rudder-AppCenter-dummy.m"; sourceTree = "<group>"; };
 		3E22E8DC89EE627DFBAFAF4B6D139CFF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3E4469D36ABD2DC12537CC0BA6FCF827 /* RSProductListViewedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductListViewedEvent.m; path = Rudder/Classes/Ecomm/Events/RSProductListViewedEvent.m; sourceTree = "<group>"; };
+		3E7ABEEF6A4F11F9F37628030C8E4295 /* Pods-Rudder-AppCenter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rudder-AppCenter_Example-umbrella.h"; sourceTree = "<group>"; };
 		3EC93D452FFCCA238B2EFFA59304F74A /* Rudder-AppCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rudder-AppCenter-umbrella.h"; sourceTree = "<group>"; };
 		3EEEBC46987BDC3D75D28594CFA384ED /* RSProductClickedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductClickedEvent.h; path = Rudder/Classes/Ecomm/Events/RSProductClickedEvent.h; sourceTree = "<group>"; };
 		40CB9A310EBD99AE515CD9AE417D24E3 /* RSTraits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSTraits.h; path = Rudder/Classes/RSTraits.h; sourceTree = "<group>"; };
-		41491AB4E06408A7AD786E7CAFC44397 /* Pods-Rudder-AppCenter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rudder-AppCenter_Tests-dummy.m"; sourceTree = "<group>"; };
 		41FC10E4BD7E234014890E22EFD0A851 /* RSCartSharedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCartSharedEvent.m; path = Rudder/Classes/Ecomm/Events/RSCartSharedEvent.m; sourceTree = "<group>"; };
 		426C61F6C810AC070B3B34A554D68CF8 /* RSProductSharedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductSharedEvent.m; path = Rudder/Classes/Ecomm/Events/RSProductSharedEvent.m; sourceTree = "<group>"; };
 		42AA1635231DF93B06FCBC8948E9BCF6 /* RSContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSContext.m; path = Rudder/Classes/RSContext.m; sourceTree = "<group>"; };
 		43A059D5F9D39AD1CEDD7535C3CDADC4 /* RSPromotionClickedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSPromotionClickedEvent.h; path = Rudder/Classes/Ecomm/Events/RSPromotionClickedEvent.h; sourceTree = "<group>"; };
-		44EFE4E04AA0441342B07CA1D98F2741 /* Pods-Rudder-AppCenter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rudder-AppCenter_Example-umbrella.h"; sourceTree = "<group>"; };
 		457F376707390B03E122E5D8CA517ADE /* RSConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSConstants.m; path = Rudder/Classes/RSConstants.m; sourceTree = "<group>"; };
 		46C260AF56D1462AF249691C3A36181F /* RSProductRemovedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductRemovedEvent.h; path = Rudder/Classes/Ecomm/Events/RSProductRemovedEvent.h; sourceTree = "<group>"; };
 		46DB96A12496CFB08058F2CD1359B75B /* RSClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSClient.h; path = Rudder/Classes/RSClient.h; sourceTree = "<group>"; };
@@ -315,7 +331,6 @@
 		5087C8C636C934388062B4AFB84EBE60 /* UIViewController+RSScreen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RSScreen.m"; path = "Rudder/Classes/UIViewController+RSScreen.m"; sourceTree = "<group>"; };
 		53157BF9C2969A60B0F627F3F69DAEEB /* Rudder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rudder-umbrella.h"; sourceTree = "<group>"; };
 		543352F8F522B03628271028F784FE0C /* Rudder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rudder-dummy.m"; sourceTree = "<group>"; };
-		5436E886EAECBD36DA60B4AA3F73C8F2 /* Pods-Rudder-AppCenter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rudder-AppCenter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		55B010594929F3C8EDA2A0A995DC1D90 /* RSECommerceCartBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceCartBuilder.m; path = Rudder/Classes/Ecomm/RSECommerceCartBuilder.m; sourceTree = "<group>"; };
 		55C82CF5B4E67CE052A7A711D6328A65 /* RSProductAddedToWishListEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductAddedToWishListEvent.h; path = Rudder/Classes/Ecomm/Events/RSProductAddedToWishListEvent.h; sourceTree = "<group>"; };
 		563CB63AFE38C5E42F347DBA17F20B7F /* RSCartSharedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCartSharedEvent.h; path = Rudder/Classes/Ecomm/Events/RSCartSharedEvent.h; sourceTree = "<group>"; };
@@ -324,7 +339,6 @@
 		58682E41F0890A8A17EB08699F79B60A /* RSECommerceCartBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceCartBuilder.h; path = Rudder/Classes/Ecomm/RSECommerceCartBuilder.h; sourceTree = "<group>"; };
 		58E9FBD19E52408C968C035B418AD326 /* RSECommerceCheckoutBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceCheckoutBuilder.m; path = Rudder/Classes/Ecomm/RSECommerceCheckoutBuilder.m; sourceTree = "<group>"; };
 		59AA003F2A268A394C939340546C5AB7 /* RSServerConfigManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSServerConfigManager.m; path = Rudder/Classes/RSServerConfigManager.m; sourceTree = "<group>"; };
-		5B76281457D0AD586005D3788C6BAFF1 /* Pods-Rudder-AppCenter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rudder-AppCenter_Example-dummy.m"; sourceTree = "<group>"; };
 		5BA899375AAA38518F5E40617B653343 /* RSProductSearchedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductSearchedEvent.h; path = Rudder/Classes/Ecomm/Events/RSProductSearchedEvent.h; sourceTree = "<group>"; };
 		5BF8E2CAEFDB28E7E648CDD7ACC6638F /* RSScreenPropertyBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSScreenPropertyBuilder.h; path = Rudder/Classes/RSScreenPropertyBuilder.h; sourceTree = "<group>"; };
 		5CEB0B22240DF11B7433892E3E4F6A28 /* RSConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSConfig.m; path = Rudder/Classes/RSConfig.m; sourceTree = "<group>"; };
@@ -333,9 +347,9 @@
 		5F693FF980C9ED97C17773C4C5E9A25E /* RSConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSConfig.h; path = Rudder/Classes/RSConfig.h; sourceTree = "<group>"; };
 		60A5EBA73D6161561E0CC5709174000B /* RSECommerceOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceOrder.h; path = Rudder/Classes/Ecomm/RSECommerceOrder.h; sourceTree = "<group>"; };
 		60FE8B347E7DB573CC7E9AA39D3D2D57 /* RSServerDestination.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSServerDestination.h; path = Rudder/Classes/RSServerDestination.h; sourceTree = "<group>"; };
+		616DC249F7B255CD346892786A89F9C3 /* Pods-Rudder-AppCenter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rudder-AppCenter_Tests-dummy.m"; sourceTree = "<group>"; };
 		61DE7AE831C576706E18EB07DEDD60F1 /* RSApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSApp.m; path = Rudder/Classes/RSApp.m; sourceTree = "<group>"; };
 		621F1303F7663E1928D3657B13AFB5D5 /* RSScreenInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSScreenInfo.h; path = Rudder/Classes/RSScreenInfo.h; sourceTree = "<group>"; };
-		63645449D64ED68A50C11F29F80264A0 /* Pods-Rudder-AppCenter_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-AppCenter_Tests-Info.plist"; sourceTree = "<group>"; };
 		65CCB030DC292F2E9D073C99C78A26D6 /* AppCenter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenter.xcframework; path = "AppCenter-SDK-Apple/AppCenter.xcframework"; sourceTree = "<group>"; };
 		66D8E15BC9C4498664EDC630998F6BE0 /* RSCouponAppliedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCouponAppliedEvent.h; path = Rudder/Classes/Ecomm/Events/RSCouponAppliedEvent.h; sourceTree = "<group>"; };
 		678937959434811A0D32E8E6AECB65D0 /* RSEventRepository.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSEventRepository.h; path = Rudder/Classes/RSEventRepository.h; sourceTree = "<group>"; };
@@ -344,56 +358,55 @@
 		6ADC13789EB966AA56EC36F560731473 /* RSServerConfigSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSServerConfigSource.h; path = Rudder/Classes/RSServerConfigSource.h; sourceTree = "<group>"; };
 		6B6226105871374DD5F4E5764D6547A9 /* RSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSLogger.h; path = Rudder/Classes/RSLogger.h; sourceTree = "<group>"; };
 		6D6B398A25BD552501724ABAFD880560 /* Rudder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rudder-prefix.pch"; sourceTree = "<group>"; };
-		70430A34733D3EEEBB465EE94C9A3704 /* Pods-Rudder-AppCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-AppCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		70E25B5F18F239DB2A83BBD8192CB333 /* RSServerDestinationDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSServerDestinationDefinition.h; path = Rudder/Classes/RSServerDestinationDefinition.h; sourceTree = "<group>"; };
-		717FDD33AE05456111E3D106114DC3A6 /* Pods-Rudder-AppCenter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rudder-AppCenter_Tests.modulemap"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		746324857777C131E28645AD6621E160 /* RSProductAddedToWishListEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductAddedToWishListEvent.m; path = Rudder/Classes/Ecomm/Events/RSProductAddedToWishListEvent.m; sourceTree = "<group>"; };
 		74D906084F99A9B92059EB4F9D151C48 /* RSECommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceProduct.h; path = Rudder/Classes/Ecomm/RSECommerceProduct.h; sourceTree = "<group>"; };
 		75CDCE5F8CDF442F45F045C2A86C3A24 /* RSProductRemovedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductRemovedEvent.m; path = Rudder/Classes/Ecomm/Events/RSProductRemovedEvent.m; sourceTree = "<group>"; };
 		76AC688EAAC8A93E8CF47D0BBFCAE8FC /* RSEventRepository.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSEventRepository.m; path = Rudder/Classes/RSEventRepository.m; sourceTree = "<group>"; };
 		7755B6B6F991BAB022FA45A23E67BD1E /* RSOrderCancelledEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSOrderCancelledEvent.h; path = Rudder/Classes/Ecomm/Events/RSOrderCancelledEvent.h; sourceTree = "<group>"; };
-		782B34B8516CEB93AFF231EBBF77E60A /* Pods-Rudder-AppCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-AppCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		784566CC5E8B3A6211121E1672516393 /* RSProductRemovedFromWishListEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductRemovedFromWishListEvent.m; path = Rudder/Classes/Ecomm/Events/RSProductRemovedFromWishListEvent.m; sourceTree = "<group>"; };
 		78C292803902DB801E0DCB850EE15828 /* RSCouponRemovedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCouponRemovedEvent.h; path = Rudder/Classes/Ecomm/Events/RSCouponRemovedEvent.h; sourceTree = "<group>"; };
 		79CBC3174FBB747E5AC5AFC69D5A5FAC /* RSTrackPropertyBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSTrackPropertyBuilder.h; path = Rudder/Classes/RSTrackPropertyBuilder.h; sourceTree = "<group>"; };
 		7AEF7ACE26AE45C088D5DAA031735FB1 /* RSProductRemovedFromWishListEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductRemovedFromWishListEvent.h; path = Rudder/Classes/Ecomm/Events/RSProductRemovedFromWishListEvent.h; sourceTree = "<group>"; };
-		7BC6D2125C14F17FA65B7A8F6D404421 /* Pods-Rudder-AppCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-AppCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7D7BA3DED2958D8AFA72D1EFE76A4129 /* RSMessageType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSMessageType.h; path = Rudder/Classes/RSMessageType.h; sourceTree = "<group>"; };
-		7DD4D844A387D6C4654B9DB3C4CA25DC /* Pods-Rudder-AppCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-AppCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DDEAE6C5FAF247187B1A935CA5DADA4 /* RSCartViewedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCartViewedEvent.h; path = Rudder/Classes/Ecomm/Events/RSCartViewedEvent.h; sourceTree = "<group>"; };
-		7E3509D5E4FABE283C8722F347001615 /* Pods-Rudder-AppCenter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-AppCenter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7F270C932D812CD41343B876C5D09204 /* Pods-Rudder-AppCenter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-AppCenter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7FC6E1F6F2DB48A6E27B609498CDC660 /* RSDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDeviceInfo.m; path = Rudder/Classes/RSDeviceInfo.m; sourceTree = "<group>"; };
 		806BEEED62559094C2E0BEA57ECC0EF1 /* RSECommerceParamNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceParamNames.m; path = Rudder/Classes/Ecomm/RSECommerceParamNames.m; sourceTree = "<group>"; };
 		80A39655DFB229CA784FE687361428C7 /* RSProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProperty.h; path = Rudder/Classes/RSProperty.h; sourceTree = "<group>"; };
 		81A1ABDEC2F5A4DF2BB1165669729E94 /* RSProductListViewedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductListViewedEvent.h; path = Rudder/Classes/Ecomm/Events/RSProductListViewedEvent.h; sourceTree = "<group>"; };
 		81D62C0509ED216BAFA8310F353BA08C /* RSProductViewedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductViewedEvent.m; path = Rudder/Classes/Ecomm/Events/RSProductViewedEvent.m; sourceTree = "<group>"; };
 		83A9A9E0791D12113DB1EFADF1CF24F4 /* RSWishListProductAddedToCartEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSWishListProductAddedToCartEvent.m; path = Rudder/Classes/Ecomm/Events/RSWishListProductAddedToCartEvent.m; sourceTree = "<group>"; };
+		8623687F7C08703C8AC0FC6C3AD6BDF6 /* Pods-Rudder-AppCenter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rudder-AppCenter_Example-dummy.m"; sourceTree = "<group>"; };
 		864270A4466294315CD6DE60E4B07A4D /* RudderAppCenterFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderAppCenterFactory.h; path = "Rudder-AppCenter/Classes/RudderAppCenterFactory.h"; sourceTree = "<group>"; };
 		8796BF906FA86BF7841A9FA3810F5467 /* RSLibraryInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSLibraryInfo.m; path = Rudder/Classes/RSLibraryInfo.m; sourceTree = "<group>"; };
 		88675ACEAF1C00601610D6794F15FCF1 /* RSECommerceWishListBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceWishListBuilder.h; path = Rudder/Classes/Ecomm/RSECommerceWishListBuilder.h; sourceTree = "<group>"; };
 		88C47AD1634ECA7D050234F813F7F1E0 /* RSECommerceWishList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceWishList.m; path = Rudder/Classes/Ecomm/RSECommerceWishList.m; sourceTree = "<group>"; };
-		8AED6EB6D0D1E15C5FE9B1EEF5D048DC /* Pods-Rudder-AppCenter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rudder-AppCenter_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8A073717F5EDE5AFF5B711ADE218F529 /* Pods-Rudder-AppCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-AppCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CD8F7D9DC5B144F0D50EF3A00F6334C /* RSDBMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDBMessage.m; path = Rudder/Classes/RSDBMessage.m; sourceTree = "<group>"; };
 		8D64C377EC3E9702D18BBC6CDD44A042 /* RSECommerceCoupon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceCoupon.h; path = Rudder/Classes/Ecomm/RSECommerceCoupon.h; sourceTree = "<group>"; };
 		8E566AFC01B9F1EAF5478559DD3B12B4 /* RSProductAddedToCartEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductAddedToCartEvent.m; path = Rudder/Classes/Ecomm/Events/RSProductAddedToCartEvent.m; sourceTree = "<group>"; };
 		8EA92856804B2576E5EFC7728B653223 /* RSPromotionViewedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSPromotionViewedEvent.h; path = Rudder/Classes/Ecomm/Events/RSPromotionViewedEvent.h; sourceTree = "<group>"; };
 		8F3B8D7048A8173FC16785003803217E /* RSCheckoutStepCompletedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCheckoutStepCompletedEvent.h; path = Rudder/Classes/Ecomm/Events/RSCheckoutStepCompletedEvent.h; sourceTree = "<group>"; };
+		8F69A178A0C1B2E1CCF1A6E485E15E2E /* Pods-Rudder-AppCenter_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-AppCenter_Example-Info.plist"; sourceTree = "<group>"; };
 		916A42439DAD4B63564635EA2C689FFB /* Rudder-AppCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rudder-AppCenter-prefix.pch"; sourceTree = "<group>"; };
 		91854D058E17A3DC9C3D774C7071F34E /* RSECommerceWishListBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceWishListBuilder.m; path = Rudder/Classes/Ecomm/RSECommerceWishListBuilder.m; sourceTree = "<group>"; };
-		919FEB631E81184C742089147DA2165F /* Pods-Rudder-AppCenter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rudder-AppCenter_Example.modulemap"; sourceTree = "<group>"; };
 		926CE93A19755A4E80BE731E3599A9F9 /* RSCheckoutStartedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCheckoutStartedEvent.h; path = Rudder/Classes/Ecomm/Events/RSCheckoutStartedEvent.h; sourceTree = "<group>"; };
 		929E3413F052F24A598D1B8576CE0C62 /* RSDBMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDBMessage.h; path = Rudder/Classes/RSDBMessage.h; sourceTree = "<group>"; };
 		94AC93C2384291165919F40A995FE017 /* RSElementCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSElementCache.m; path = Rudder/Classes/RSElementCache.m; sourceTree = "<group>"; };
 		95B9CFA3BCB087E90AF129C8FFECDC12 /* Rudder-AppCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Rudder-AppCenter.debug.xcconfig"; sourceTree = "<group>"; };
 		98DCB363E1849B8BAE241702D1C3DD95 /* RSMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSMessage.h; path = Rudder/Classes/RSMessage.h; sourceTree = "<group>"; };
+		9AB66F3DE479130C10EF75926F07045C /* Rudder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rudder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA3119B9E816796ACFE1637AEE593E6 /* RSProductListFilteredEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductListFilteredEvent.m; path = Rudder/Classes/Ecomm/Events/RSProductListFilteredEvent.m; sourceTree = "<group>"; };
 		9D04E1F0B3BF46D376AFE3393B145E7B /* RSECommerceOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceOrder.m; path = Rudder/Classes/Ecomm/RSECommerceOrder.m; sourceTree = "<group>"; };
 		9D062C4F234F901C1C38A8F3F8B79261 /* RSScreenInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSScreenInfo.m; path = Rudder/Classes/RSScreenInfo.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FCDDE5FEE897EDF2C89EFE4F91E8A2B /* Pods-Rudder-AppCenter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rudder-AppCenter_Example.modulemap"; sourceTree = "<group>"; };
 		A15015C67B2BEDD5693BC1FE0B4B6DFF /* RSOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSOption.m; path = Rudder/Classes/RSOption.m; sourceTree = "<group>"; };
 		A4996DFB79B8BEDB28AC7F2F37E538A5 /* RSApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSApp.h; path = Rudder/Classes/RSApp.h; sourceTree = "<group>"; };
+		A6C861541C417926817EECA8B62E391B /* Pods-Rudder-AppCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-AppCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A850C967878495D885C76D11F293AAFC /* RSCouponEnteredEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCouponEnteredEvent.m; path = Rudder/Classes/Ecomm/Events/RSCouponEnteredEvent.m; sourceTree = "<group>"; };
+		A8CD4BA490AF6FBA32890363931BB422 /* Pods-Rudder-AppCenter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rudder-AppCenter_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A9610CD09E6DF5D9228DEC1B87CF9EBD /* RSECommerceCheckout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceCheckout.m; path = Rudder/Classes/Ecomm/RSECommerceCheckout.m; sourceTree = "<group>"; };
 		AB5351A0E0109AAAE993C8701FC26591 /* RSOrderRefundedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSOrderRefundedEvent.m; path = Rudder/Classes/Ecomm/Events/RSOrderRefundedEvent.m; sourceTree = "<group>"; };
 		ABFD18D484A6492E5F8EDEAFF071FDE1 /* RSECommerceFilterBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceFilterBuilder.h; path = Rudder/Classes/Ecomm/RSECommerceFilterBuilder.h; sourceTree = "<group>"; };
@@ -404,6 +417,7 @@
 		B785A183984C14DA0BC59944450639B0 /* RSECommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommercePromotion.h; path = Rudder/Classes/Ecomm/RSECommercePromotion.h; sourceTree = "<group>"; };
 		B7FD5D2F4C067EBFA54079D2A679E755 /* RSECommerceSort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceSort.m; path = Rudder/Classes/Ecomm/RSECommerceSort.m; sourceTree = "<group>"; };
 		B860108D9F1CB6ABFB1D9172449969B2 /* RSLibraryInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSLibraryInfo.h; path = Rudder/Classes/RSLibraryInfo.h; sourceTree = "<group>"; };
+		B8B4E35B91CD66CEA8B6F968EA864118 /* Pods-Rudder-AppCenter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rudder-AppCenter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B929DB0526462BC2F804D3ECFABF3877 /* RSPromotionClickedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSPromotionClickedEvent.m; path = Rudder/Classes/Ecomm/Events/RSPromotionClickedEvent.m; sourceTree = "<group>"; };
 		BA7A513ED7935963CCC577793BACFED1 /* RSElementCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSElementCache.h; path = Rudder/Classes/RSElementCache.h; sourceTree = "<group>"; };
 		BD61A00783CF5C8EA23E401809953E0A /* RSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSLogger.m; path = Rudder/Classes/RSLogger.m; sourceTree = "<group>"; };
@@ -422,6 +436,7 @@
 		CB60C27F8266BC0628A4E2E87AF3E4BD /* RSMessageBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSMessageBuilder.m; path = Rudder/Classes/RSMessageBuilder.m; sourceTree = "<group>"; };
 		CC0AE6552B8A6B390A466118063EE17F /* RSPromotionViewedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSPromotionViewedEvent.m; path = Rudder/Classes/Ecomm/Events/RSPromotionViewedEvent.m; sourceTree = "<group>"; };
 		CC2A034045EF5C57512C2DD555C122AA /* RSMessageType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSMessageType.m; path = Rudder/Classes/RSMessageType.m; sourceTree = "<group>"; };
+		CFE8AD93A56F7017A37E5C87B245D743 /* Pods-Rudder-AppCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-AppCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CFFAA3140F1164AD367A04250BA76F15 /* RSIntegrationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSIntegrationFactory.h; path = Rudder/Classes/RSIntegrationFactory.h; sourceTree = "<group>"; };
 		D06A5F42C82E3C82E79BB311FCE2C86D /* RSECommerceProductBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceProductBuilder.m; path = Rudder/Classes/Ecomm/RSECommerceProductBuilder.m; sourceTree = "<group>"; };
 		D3CAC3DA82238C180F38FAEAAEED9206 /* RSECommercePromotionBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommercePromotionBuilder.h; path = Rudder/Classes/Ecomm/RSECommercePromotionBuilder.h; sourceTree = "<group>"; };
@@ -438,6 +453,7 @@
 		E7F13CBC1817FFCCCD0AAC963B88FEA1 /* RSServerConfigManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSServerConfigManager.h; path = Rudder/Classes/RSServerConfigManager.h; sourceTree = "<group>"; };
 		E800C779D166A321049B6024BFA7CF39 /* RSCheckoutStepViewedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCheckoutStepViewedEvent.h; path = Rudder/Classes/Ecomm/Events/RSCheckoutStepViewedEvent.h; sourceTree = "<group>"; };
 		EA45C2EA73512107C7C7EBEFEC1B2849 /* RSECommerceFilterBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceFilterBuilder.m; path = Rudder/Classes/Ecomm/RSECommerceFilterBuilder.m; sourceTree = "<group>"; };
+		EA7D89CB310A97A6C3FA54FC573C5905 /* Pods-Rudder-AppCenter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rudder-AppCenter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EED9225672B793A43B87F5A015A22823 /* RSECommercePromotionBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommercePromotionBuilder.m; path = Rudder/Classes/Ecomm/RSECommercePromotionBuilder.m; sourceTree = "<group>"; };
 		EF8ADA655DEF09D27CB0CB6F224985B6 /* RSECommerceCheckout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceCheckout.h; path = Rudder/Classes/Ecomm/RSECommerceCheckout.h; sourceTree = "<group>"; };
 		F12B8D664A7F251A56D235D7C2618E9A /* RSECommerceCouponBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceCouponBuilder.h; path = Rudder/Classes/Ecomm/RSECommerceCouponBuilder.h; sourceTree = "<group>"; };
@@ -446,35 +462,35 @@
 		F43B3CBF726BE83171E75BAD4EBC4C0F /* RSECommerceParamNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceParamNames.h; path = Rudder/Classes/Ecomm/RSECommerceParamNames.h; sourceTree = "<group>"; };
 		F4BCA0DC9CB95761512DB413DA3119FE /* RSServerDestination.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSServerDestination.m; path = Rudder/Classes/RSServerDestination.m; sourceTree = "<group>"; };
 		F7716787A8A2F1A281E00773C42B6FF5 /* RSNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSNetwork.m; path = Rudder/Classes/RSNetwork.m; sourceTree = "<group>"; };
-		F7F2402A931A72F6A7A2143EBA843DE2 /* Pods-Rudder-AppCenter_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-AppCenter_Example-Info.plist"; sourceTree = "<group>"; };
 		F983093EABEB69D3C44EE18165EE3771 /* AppCenterAnalytics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenterAnalytics.xcframework; path = "AppCenter-SDK-Apple/AppCenterAnalytics.xcframework"; sourceTree = "<group>"; };
 		FA1B7D543670E01B5DCE9B06D931AC4B /* Rudder-AppCenter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Rudder-AppCenter-Info.plist"; sourceTree = "<group>"; };
 		FBE7429900EA2D20E7CD9811D0E26926 /* RSCheckoutStepViewedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCheckoutStepViewedEvent.m; path = Rudder/Classes/Ecomm/Events/RSCheckoutStepViewedEvent.m; sourceTree = "<group>"; };
-		FEE685FDA88E1899FD6B485D62C6D527 /* Pods-Rudder-AppCenter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-AppCenter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FCCEF3BF09A68C1F0E179C87F706E47B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D0B5DDFB73E0B5EF1C00D479B434D8D /* Frameworks */ = {
+		2FD71C16244DDB9C7C4987EDABAAEB16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF38CF33D704115AB826C743D2C67665 /* Foundation.framework in Frameworks */,
+				66A32BFE180A59E94E9F0ADA7F65643D /* Foundation.framework in Frameworks */,
+				80984AF98C03E2F98A6CD74DCC2B74BC /* Rudder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9575C9D290DC13D5BBEA3BA7625F3FB8 /* Frameworks */ = {
+		62C49540EC9C7FF0BB4ED6B89F695A11 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CACFA3E4E9258DD488BEEBA82837B8CD /* Foundation.framework in Frameworks */,
+				007D9D9474B64A02005E91874A7A4607 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD83B59717E65F23E2079D64F22353EF /* Frameworks */ = {
+		7FEEE8EA2513404EB78A0C72AA8AEACF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4514FF80D166EB2561304A5A887619E9 /* Foundation.framework in Frameworks */,
+				A4BC91C6BCA920765408B1809E8D6E29 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +534,22 @@
 				49ECCA4F20BBFE2CDED879A3CD71391B /* Rudder-AppCenter */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2735CE89CA4BF301081A4E239821D551 /* Pods-Rudder-AppCenter_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF46EFC59AF2A1389912E8730FB288 /* Pods-Rudder-AppCenter_Tests.modulemap */,
+				B8B4E35B91CD66CEA8B6F968EA864118 /* Pods-Rudder-AppCenter_Tests-acknowledgements.markdown */,
+				7F270C932D812CD41343B876C5D09204 /* Pods-Rudder-AppCenter_Tests-acknowledgements.plist */,
+				616DC249F7B255CD346892786A89F9C3 /* Pods-Rudder-AppCenter_Tests-dummy.m */,
+				362E9D71648EFBE5B8D51879E3F2701A /* Pods-Rudder-AppCenter_Tests-Info.plist */,
+				A8CD4BA490AF6FBA32890363931BB422 /* Pods-Rudder-AppCenter_Tests-umbrella.h */,
+				8A073717F5EDE5AFF5B711ADE218F529 /* Pods-Rudder-AppCenter_Tests.debug.xcconfig */,
+				A6C861541C417926817EECA8B62E391B /* Pods-Rudder-AppCenter_Tests.release.xcconfig */,
+			);
+			name = "Pods-Rudder-AppCenter_Tests";
+			path = "Target Support Files/Pods-Rudder-AppCenter_Tests";
 			sourceTree = "<group>";
 		};
 		2E5DF2DACD83AC7D9068C1405BE76F4B /* Frameworks */ = {
@@ -565,21 +597,38 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		521C256168685A11824E9851C936317B /* Pods-Rudder-AppCenter_Example */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				9FCDDE5FEE897EDF2C89EFE4F91E8A2B /* Pods-Rudder-AppCenter_Example.modulemap */,
+				EA7D89CB310A97A6C3FA54FC573C5905 /* Pods-Rudder-AppCenter_Example-acknowledgements.markdown */,
+				24C22C360353A7C444EFDC48317830C8 /* Pods-Rudder-AppCenter_Example-acknowledgements.plist */,
+				8623687F7C08703C8AC0FC6C3AD6BDF6 /* Pods-Rudder-AppCenter_Example-dummy.m */,
+				263CB1594FE24FEB9A8A8FC40CD3EB77 /* Pods-Rudder-AppCenter_Example-frameworks.sh */,
+				8F69A178A0C1B2E1CCF1A6E485E15E2E /* Pods-Rudder-AppCenter_Example-Info.plist */,
+				3E7ABEEF6A4F11F9F37628030C8E4295 /* Pods-Rudder-AppCenter_Example-umbrella.h */,
+				CFE8AD93A56F7017A37E5C87B245D743 /* Pods-Rudder-AppCenter_Example.debug.xcconfig */,
+				28B1E4BB065D0B9D95064A54A81B5661 /* Pods-Rudder-AppCenter_Example.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Pods-Rudder-AppCenter_Example";
+			path = "Target Support Files/Pods-Rudder-AppCenter_Example";
 			sourceTree = "<group>";
 		};
-		653B95B7B01DBBC54857FF7178BAA270 /* Targets Support Files */ = {
+		58BEA5A5FCE43ECA884B2F3EF684647E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C687A21A43D2943E8962DCA43FF99E20 /* Pods-Rudder-AppCenter_Example */,
-				C3A91B3AB18D83A8F630CEBECDB77662 /* Pods-Rudder-AppCenter_Tests */,
+				521C256168685A11824E9851C936317B /* Pods-Rudder-AppCenter_Example */,
+				2735CE89CA4BF301081A4E239821D551 /* Pods-Rudder-AppCenter_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		60DEC9E92945431E276FE4FB7D935BD3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FCCEF3BF09A68C1F0E179C87F706E47B /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		69DE3ADBBDAC92682E44EF145A76346F /* Pods */ = {
@@ -641,40 +690,6 @@
 				46DDEBF1997A157C72DD09DC20EA03F0 /* Rudder-AppCenter.podspec */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		C3A91B3AB18D83A8F630CEBECDB77662 /* Pods-Rudder-AppCenter_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				717FDD33AE05456111E3D106114DC3A6 /* Pods-Rudder-AppCenter_Tests.modulemap */,
-				34EEDB30800C12938673C2512DA2B31B /* Pods-Rudder-AppCenter_Tests-acknowledgements.markdown */,
-				FEE685FDA88E1899FD6B485D62C6D527 /* Pods-Rudder-AppCenter_Tests-acknowledgements.plist */,
-				41491AB4E06408A7AD786E7CAFC44397 /* Pods-Rudder-AppCenter_Tests-dummy.m */,
-				113EAA63C49BC6C6191810497710787E /* Pods-Rudder-AppCenter_Tests-frameworks.sh */,
-				63645449D64ED68A50C11F29F80264A0 /* Pods-Rudder-AppCenter_Tests-Info.plist */,
-				8AED6EB6D0D1E15C5FE9B1EEF5D048DC /* Pods-Rudder-AppCenter_Tests-umbrella.h */,
-				7DD4D844A387D6C4654B9DB3C4CA25DC /* Pods-Rudder-AppCenter_Tests.debug.xcconfig */,
-				7BC6D2125C14F17FA65B7A8F6D404421 /* Pods-Rudder-AppCenter_Tests.release.xcconfig */,
-			);
-			name = "Pods-Rudder-AppCenter_Tests";
-			path = "Target Support Files/Pods-Rudder-AppCenter_Tests";
-			sourceTree = "<group>";
-		};
-		C687A21A43D2943E8962DCA43FF99E20 /* Pods-Rudder-AppCenter_Example */ = {
-			isa = PBXGroup;
-			children = (
-				919FEB631E81184C742089147DA2165F /* Pods-Rudder-AppCenter_Example.modulemap */,
-				5436E886EAECBD36DA60B4AA3F73C8F2 /* Pods-Rudder-AppCenter_Example-acknowledgements.markdown */,
-				7E3509D5E4FABE283C8722F347001615 /* Pods-Rudder-AppCenter_Example-acknowledgements.plist */,
-				5B76281457D0AD586005D3788C6BAFF1 /* Pods-Rudder-AppCenter_Example-dummy.m */,
-				0A42F7286DAC036FBD05EC004312498E /* Pods-Rudder-AppCenter_Example-frameworks.sh */,
-				F7F2402A931A72F6A7A2143EBA843DE2 /* Pods-Rudder-AppCenter_Example-Info.plist */,
-				44EFE4E04AA0441342B07CA1D98F2741 /* Pods-Rudder-AppCenter_Example-umbrella.h */,
-				70430A34733D3EEEBB465EE94C9A3704 /* Pods-Rudder-AppCenter_Example.debug.xcconfig */,
-				782B34B8516CEB93AFF231EBBF77E60A /* Pods-Rudder-AppCenter_Example.release.xcconfig */,
-			);
-			name = "Pods-Rudder-AppCenter_Example";
-			path = "Target Support Files/Pods-Rudder-AppCenter_Example";
 			sourceTree = "<group>";
 		};
 		CCEE708EE583DE39B4985FD40909E711 /* Rudder */ = {
@@ -864,17 +879,18 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				229E4DEEF7F561C807C8119E5066A9CD /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				EFB6D72C9509F0B62232368CA65E1475 /* Frameworks */,
 				69DE3ADBBDAC92682E44EF145A76346F /* Pods */,
 				35950EB722D28FE403230707DDAA9D3C /* Products */,
-				653B95B7B01DBBC54857FF7178BAA270 /* Targets Support Files */,
+				58BEA5A5FCE43ECA884B2F3EF684647E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		EFB6D72C9509F0B62232368CA65E1475 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				9AB66F3DE479130C10EF75926F07045C /* Rudder.framework */,
+				60DEC9E92945431E276FE4FB7D935BD3 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -890,13 +906,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2120F54965484D6D0111AC6E6E1AA371 /* Headers */ = {
+		04850DADEFE93464AE59696AACA07D6F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C94EADF504EB2E7825DABFD4460B8DB0 /* Rudder-AppCenter-umbrella.h in Headers */,
-				7BEDBDDB63AF10B61ACA783A41F2BCFD /* RudderAppCenterFactory.h in Headers */,
-				5F649316B4165858BC63B904B4AC824F /* RudderAppCenterIntegration.h in Headers */,
+				4C8BCE4A2483FA25D0EA6B92331451CD /* Rudder-AppCenter-umbrella.h in Headers */,
+				E8FE754D40320951766D8F20B67B26AD /* RudderAppCenterFactory.h in Headers */,
+				47166627E352858F69E6212AC4B3911E /* RudderAppCenterIntegration.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217F173AFBE080849874C3E98A4150F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAABF5E9CFFF0C7F0CDA64B487871566 /* Pods-Rudder-AppCenter_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -992,19 +1016,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		752FC457E58E7607D8A37ABB766497CE /* Headers */ = {
+		7F258512D34754DD552F8C64B1515943 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				542077416A7A4460D1FCAE67F7ADF887 /* Pods-Rudder-AppCenter_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D37B4EF4FF4D3A408C8503D2BF402C09 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76CE6CF02054AD75AE7646AD77C5BC58 /* Pods-Rudder-AppCenter_Tests-umbrella.h in Headers */,
+				97746DED1E318795B6185024EC1359F9 /* Pods-Rudder-AppCenter_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1013,16 +1029,18 @@
 /* Begin PBXNativeTarget section */
 		15519E0CC021D7DF834A08A37C0CD32D /* Rudder-AppCenter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5B2A3AE2EBFC27FE37FFB896A745E3E /* Build configuration list for PBXNativeTarget "Rudder-AppCenter" */;
+			buildConfigurationList = FF0B5AB8751225B999C14C0948B76EFF /* Build configuration list for PBXNativeTarget "Rudder-AppCenter" */;
 			buildPhases = (
-				2120F54965484D6D0111AC6E6E1AA371 /* Headers */,
-				42CA9C1E6B23BD5C8587C7204A5AB48F /* Sources */,
-				9575C9D290DC13D5BBEA3BA7625F3FB8 /* Frameworks */,
-				BBE9774AA08B618705D08B75679D0A9E /* Resources */,
+				04850DADEFE93464AE59696AACA07D6F /* Headers */,
+				6CE3854B5899ABE7643C771276198801 /* Sources */,
+				2FD71C16244DDB9C7C4987EDABAAEB16 /* Frameworks */,
+				4B54DD12F6677829DE418DCB18326102 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9CBC9EEC9546B8DADDEA4EE381D3B49D /* PBXTargetDependency */,
+				E6EEE6D6060404121A032D21C84E2053 /* PBXTargetDependency */,
 			);
 			name = "Rudder-AppCenter";
 			productName = "Rudder-AppCenter";
@@ -1031,17 +1049,19 @@
 		};
 		C5B2DF4F4BE01377110C24B8B56C108F /* Pods-Rudder-AppCenter_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B9D7055F0F187DDEEC9BCDC77481CC3 /* Build configuration list for PBXNativeTarget "Pods-Rudder-AppCenter_Example" */;
+			buildConfigurationList = 0C0AF77B68BA6AA29A11C2BD86C52B80 /* Build configuration list for PBXNativeTarget "Pods-Rudder-AppCenter_Example" */;
 			buildPhases = (
-				752FC457E58E7607D8A37ABB766497CE /* Headers */,
-				08D1591D2A61F5DFE6FF3243D673C790 /* Sources */,
-				CD83B59717E65F23E2079D64F22353EF /* Frameworks */,
-				BDDC8530F5EE7D03AD64D064CB2316FF /* Resources */,
+				217F173AFBE080849874C3E98A4150F2 /* Headers */,
+				ADC76E4FB82AB6825E147B57F82F7476 /* Sources */,
+				7FEEE8EA2513404EB78A0C72AA8AEACF /* Frameworks */,
+				363A6E293D4F451E1EA76FE694927A13 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				40A52C0809E6A95C3ECD48FC35706CB9 /* PBXTargetDependency */,
+				2E0A9CFB579A21891D8CDBFA00E6AB89 /* PBXTargetDependency */,
+				FA0367FA685136F0DF3C6937F8628EBC /* PBXTargetDependency */,
+				90D6F139E0E7C9AA10F655FD78690F63 /* PBXTargetDependency */,
 			);
 			name = "Pods-Rudder-AppCenter_Example";
 			productName = "Pods-Rudder-AppCenter_Example";
@@ -1050,19 +1070,17 @@
 		};
 		E0FA8862E99A18E3823AD94E9FBB066F /* Pods-Rudder-AppCenter_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB19BB16B71D9F14E06BDBA484A31776 /* Build configuration list for PBXNativeTarget "Pods-Rudder-AppCenter_Tests" */;
+			buildConfigurationList = 0AE324DE82917F744AE59289FD6F5F69 /* Build configuration list for PBXNativeTarget "Pods-Rudder-AppCenter_Tests" */;
 			buildPhases = (
-				D37B4EF4FF4D3A408C8503D2BF402C09 /* Headers */,
-				C069D685CE0E3D5B44D7EC892552A6AA /* Sources */,
-				1D0B5DDFB73E0B5EF1C00D479B434D8D /* Frameworks */,
-				E893CAD12EC042E018B4A69D028899B2 /* Resources */,
+				7F258512D34754DD552F8C64B1515943 /* Headers */,
+				E3BF63B3E90A077369DD392B3E7488A7 /* Sources */,
+				62C49540EC9C7FF0BB4ED6B89F695A11 /* Frameworks */,
+				90D67E34552C28D1631BB23676DB6CC8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A111AC570B29C7E4E70BBC3121568B1C /* PBXTargetDependency */,
-				88B67334F08416FDF7D45BF885C4DB97 /* PBXTargetDependency */,
-				FE9B432C7F759C767127C8A156C47A85 /* PBXTargetDependency */,
+				3C6EF84BD7555E83D25C1D05188CF271 /* PBXTargetDependency */,
 			);
 			name = "Pods-Rudder-AppCenter_Tests";
 			productName = "Pods-Rudder-AppCenter_Tests";
@@ -1119,14 +1137,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BBE9774AA08B618705D08B75679D0A9E /* Resources */ = {
+		363A6E293D4F451E1EA76FE694927A13 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDDC8530F5EE7D03AD64D064CB2316FF /* Resources */ = {
+		4B54DD12F6677829DE418DCB18326102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D67E34552C28D1631BB23676DB6CC8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1134,13 +1159,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D9F7AEFB4874A09D925A8E1C59945DFE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E893CAD12EC042E018B4A69D028899B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1175,29 +1193,29 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		08D1591D2A61F5DFE6FF3243D673C790 /* Sources */ = {
+		6CE3854B5899ABE7643C771276198801 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4739674EFC5E01D906B40AB283E1C54B /* Pods-Rudder-AppCenter_Example-dummy.m in Sources */,
+				02711B5171B3AD2D8395EE40A339DDB8 /* Rudder-AppCenter-dummy.m in Sources */,
+				0B7254D1DACEB5A77387997A5BAAC8A3 /* RudderAppCenterFactory.m in Sources */,
+				656ED7832C1C3443E89F0E741B2E7DB2 /* RudderAppCenterIntegration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42CA9C1E6B23BD5C8587C7204A5AB48F /* Sources */ = {
+		ADC76E4FB82AB6825E147B57F82F7476 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				549B8369EBDD35A48737279F2B2A9FAD /* Rudder-AppCenter-dummy.m in Sources */,
-				5187D1D2A4D76E8A4A7B6EB8AB0C9F2D /* RudderAppCenterFactory.m in Sources */,
-				82319E7B8C537E34244BA620F785E399 /* RudderAppCenterIntegration.m in Sources */,
+				DDCC2B2292613D2CF4DFCA717A2FE64C /* Pods-Rudder-AppCenter_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C069D685CE0E3D5B44D7EC892552A6AA /* Sources */ = {
+		E3BF63B3E90A077369DD392B3E7488A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBD0D65282EFD5C06BFF4B09C2A2885 /* Pods-Rudder-AppCenter_Tests-dummy.m in Sources */,
+				D3E7B87A2D4512A1234F413DA8050FFE /* Pods-Rudder-AppCenter_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1293,33 +1311,77 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		40A52C0809E6A95C3ECD48FC35706CB9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Rudder-AppCenter";
-			target = 15519E0CC021D7DF834A08A37C0CD32D /* Rudder-AppCenter */;
-			targetProxy = 53D26CCFD1B9998B4B47CF389651455D /* PBXContainerItemProxy */;
-		};
-		88B67334F08416FDF7D45BF885C4DB97 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Rudder-AppCenter_Example";
-			target = C5B2DF4F4BE01377110C24B8B56C108F /* Pods-Rudder-AppCenter_Example */;
-			targetProxy = C455B3331FD53F8FFD7CE352D1162668 /* PBXContainerItemProxy */;
-		};
-		A111AC570B29C7E4E70BBC3121568B1C /* PBXTargetDependency */ = {
+		2E0A9CFB579A21891D8CDBFA00E6AB89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AppCenter;
 			target = A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */;
-			targetProxy = 2BE9A42E3D57C961332B5F39AAB07038 /* PBXContainerItemProxy */;
+			targetProxy = 5BD0EBE49D1492FFE90FC1B9C508522D /* PBXContainerItemProxy */;
 		};
-		FE9B432C7F759C767127C8A156C47A85 /* PBXTargetDependency */ = {
+		3C6EF84BD7555E83D25C1D05188CF271 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Rudder-AppCenter_Example";
+			target = C5B2DF4F4BE01377110C24B8B56C108F /* Pods-Rudder-AppCenter_Example */;
+			targetProxy = 747E9A5CB6566E52096BC0251FA68E40 /* PBXContainerItemProxy */;
+		};
+		90D6F139E0E7C9AA10F655FD78690F63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Rudder-AppCenter";
+			target = 15519E0CC021D7DF834A08A37C0CD32D /* Rudder-AppCenter */;
+			targetProxy = FE048F502A9AF0DAA62E7F34B32ECC2C /* PBXContainerItemProxy */;
+		};
+		9CBC9EEC9546B8DADDEA4EE381D3B49D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppCenter;
+			target = A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */;
+			targetProxy = CDC09CDDE5983538289500772BB95E34 /* PBXContainerItemProxy */;
+		};
+		E6EEE6D6060404121A032D21C84E2053 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Rudder;
 			target = F5C6323F415EBC1C6BAD0C1E271A0C4D /* Rudder */;
-			targetProxy = 7C2B444174DBBBC3C09A6185EED618F3 /* PBXContainerItemProxy */;
+			targetProxy = 530FE003BC46EB9FFBC02E87C74113B2 /* PBXContainerItemProxy */;
+		};
+		FA0367FA685136F0DF3C6937F8628EBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Rudder;
+			target = F5C6323F415EBC1C6BAD0C1E271A0C4D /* Rudder */;
+			targetProxy = CF27C39D8894EAEDA1335080915AED04 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0B526C814AA2DF1B2FF514AC27459D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE8AD93A56F7017A37E5C87B245D743 /* Pods-Rudder-AppCenter_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-AppCenter_Example/Pods-Rudder-AppCenter_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-AppCenter_Example/Pods-Rudder-AppCenter_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1A5E61A9C1E978BABFFF8FDFF740E062 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C87E6AB8FD950D372A34737862B093BB /* AppCenter.release.xcconfig */;
@@ -1400,9 +1462,9 @@
 			};
 			name = Debug;
 		};
-		70AC0C0242790A00BE5B1DFEA4296B1D /* Release */ = {
+		2B4870512B155A8479F8A1FF726B8899 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08F57555919C1836AD87374A4E870BB4 /* Rudder.release.xcconfig */;
+			baseConfigurationReference = 4CF88E902EF9109B367A9A69E5161328 /* Rudder-AppCenter.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1412,14 +1474,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Rudder/Rudder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Rudder/Rudder-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Rudder-AppCenter/Rudder-AppCenter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rudder-AppCenter/Rudder-AppCenter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Rudder/Rudder.modulemap";
-				PRODUCT_MODULE_NAME = Rudder;
-				PRODUCT_NAME = Rudder;
+				MODULEMAP_FILE = "Target Support Files/Rudder-AppCenter/Rudder-AppCenter.modulemap";
+				PRODUCT_MODULE_NAME = Rudder_AppCenter;
+				PRODUCT_NAME = Rudder_AppCenter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1431,9 +1493,41 @@
 			};
 			name = Release;
 		};
-		71C3E3B921C3BDCDD7FA426FE190A0BB /* Release */ = {
+		2BC3B717C3791CE7B3CB659142010842 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 782B34B8516CEB93AFF231EBBF77E60A /* Pods-Rudder-AppCenter_Example.release.xcconfig */;
+			baseConfigurationReference = 8A073717F5EDE5AFF5B711ADE218F529 /* Pods-Rudder-AppCenter_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-AppCenter_Tests/Pods-Rudder-AppCenter_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-AppCenter_Tests/Pods-Rudder-AppCenter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		509A7CD78CBEE08FFF9F2ABBB384481F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28B1E4BB065D0B9D95064A54A81B5661 /* Pods-Rudder-AppCenter_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1464,41 +1558,9 @@
 			};
 			name = Release;
 		};
-		79D002C2FDC4492A84B10F38B9A4F8AC /* Debug */ = {
+		70AC0C0242790A00BE5B1DFEA4296B1D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DD4D844A387D6C4654B9DB3C4CA25DC /* Pods-Rudder-AppCenter_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-AppCenter_Tests/Pods-Rudder-AppCenter_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-AppCenter_Tests/Pods-Rudder-AppCenter_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A6EDCE08558BF344524151A28C73D40B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CF88E902EF9109B367A9A69E5161328 /* Rudder-AppCenter.release.xcconfig */;
+			baseConfigurationReference = 08F57555919C1836AD87374A4E870BB4 /* Rudder.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1508,14 +1570,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Rudder-AppCenter/Rudder-AppCenter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Rudder-AppCenter/Rudder-AppCenter-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Rudder/Rudder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rudder/Rudder-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Rudder-AppCenter/Rudder-AppCenter.modulemap";
-				PRODUCT_MODULE_NAME = Rudder_AppCenter;
-				PRODUCT_NAME = Rudder_AppCenter;
+				MODULEMAP_FILE = "Target Support Files/Rudder/Rudder.modulemap";
+				PRODUCT_MODULE_NAME = Rudder;
+				PRODUCT_NAME = Rudder;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1569,6 +1631,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		B131A57D1ACF237361D835E86D0BB8C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C861541C417926817EECA8B62E391B /* Pods-Rudder-AppCenter_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-AppCenter_Tests/Pods-Rudder-AppCenter_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-AppCenter_Tests/Pods-Rudder-AppCenter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1632,39 +1727,7 @@
 			};
 			name = Release;
 		};
-		CE458E5735846B0007504A18858C3A33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70430A34733D3EEEBB465EE94C9A3704 /* Pods-Rudder-AppCenter_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-AppCenter_Example/Pods-Rudder-AppCenter_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-AppCenter_Example/Pods-Rudder-AppCenter_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D0DBCDF41643960EC5721E65F60A008C /* Debug */ = {
+		FA2A458ED564169F25E4E25330EDBA99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95B9CFA3BCB087E90AF129C8FFECDC12 /* Rudder-AppCenter.debug.xcconfig */;
 			buildSettings = {
@@ -1694,39 +1757,6 @@
 			};
 			name = Debug;
 		};
-		E4A26AEB46D9F8901DD2CF2C63FD37A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BC6D2125C14F17FA65B7A8F6D404421 /* Pods-Rudder-AppCenter_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-AppCenter_Tests/Pods-Rudder-AppCenter_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-AppCenter_Tests/Pods-Rudder-AppCenter_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1739,11 +1769,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B9D7055F0F187DDEEC9BCDC77481CC3 /* Build configuration list for PBXNativeTarget "Pods-Rudder-AppCenter_Example" */ = {
+		0AE324DE82917F744AE59289FD6F5F69 /* Build configuration list for PBXNativeTarget "Pods-Rudder-AppCenter_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE458E5735846B0007504A18858C3A33 /* Debug */,
-				71C3E3B921C3BDCDD7FA426FE190A0BB /* Release */,
+				2BC3B717C3791CE7B3CB659142010842 /* Debug */,
+				B131A57D1ACF237361D835E86D0BB8C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C0AF77B68BA6AA29A11C2BD86C52B80 /* Build configuration list for PBXNativeTarget "Pods-Rudder-AppCenter_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B526C814AA2DF1B2FF514AC27459D4F /* Debug */,
+				509A7CD78CBEE08FFF9F2ABBB384481F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1757,29 +1796,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5B2A3AE2EBFC27FE37FFB896A745E3E /* Build configuration list for PBXNativeTarget "Rudder-AppCenter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0DBCDF41643960EC5721E65F60A008C /* Debug */,
-				A6EDCE08558BF344524151A28C73D40B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB19BB16B71D9F14E06BDBA484A31776 /* Build configuration list for PBXNativeTarget "Pods-Rudder-AppCenter_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79D002C2FDC4492A84B10F38B9A4F8AC /* Debug */,
-				E4A26AEB46D9F8901DD2CF2C63FD37A2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D66F6F304EF6F1CA5AEFEA6F874038C2 /* Build configuration list for PBXNativeTarget "Rudder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0603650DED669973EE97F0CD99B6653 /* Debug */,
 				70AC0C0242790A00BE5B1DFEA4296B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0B5AB8751225B999C14C0948B76EFF /* Build configuration list for PBXNativeTarget "Rudder-AppCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2A458ED564169F25E4E25330EDBA99 /* Debug */,
+				2B4870512B155A8479F8A1FF726B8899 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

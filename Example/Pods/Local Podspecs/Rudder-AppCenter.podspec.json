@@ -18,5 +18,13 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "Rudder-AppCenter/Classes/**/*"
+  "source_files": "Rudder-AppCenter/Classes/**/*",
+  "dependencies": {
+    "AppCenter": [
+
+    ],
+    "Rudder": [
+
+    ]
+  }
 }
