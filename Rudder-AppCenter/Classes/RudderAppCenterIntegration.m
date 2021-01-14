@@ -19,13 +19,18 @@
     if (self) {
         [RSLogger logDebug:@"Initializing AppCenter SDK"];
         dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"Check config");
+            [RSLogger logDebug:[[NSString alloc] initWithFormat:@"%@", [config objectForKey:@"appSecret"]]];
             self.transmissionLevel = [config objectForKey:@"transmissionLevel"];
+            if(![self.transmissionLevel isEqualToString: @""]){
+                NSLog(@"inside transmission level");
+                [RSLogger logDebug:[[NSString alloc] initWithFormat:@"%ld", 60*[self.transmissionLevel integerValue]]];
+                [MSACAnalytics setTransmissionInterval:60*[self.transmissionLevel integerValue]];
+            }
             self.eventPriorityMap = [config objectForKey:@"eventPriorityMap"];
-#ifdef __DEVICE__
-                             [MSACAppCenter start:[config objectForKey:@"appSecret"] withServices:@[
-                             [MSACAnalytics class]
-                             ]];
-#endif
+            [MSACAppCenter start:[config objectForKey:@"appSecret"] withServices:@[
+                [MSACAnalytics class]
+            ]];
             
         });
     }
@@ -41,29 +46,48 @@
         }
     } @catch (NSException *ex) {
         [RSLogger logError:[[NSString alloc] initWithFormat:@"%@", ex]];
-        }
     }
+}
+
+- (void)reset {
+    [RSLogger logDebug:@"Inside reset"];
+}
+
 - (void) processRudderEvent: (nonnull RSMessage *) message {
     NSString *type = message.type;
     if([type isEqualToString:@"track"]){
+        [RSLogger logDebug:@"Inside track"];
         // do for track
-        //need to check how events priority map is coming and then write the logic
-#ifdef __DEVICE__
+        NSDictionary *eventPriorityHashMap = nil;
+        if(self.eventPriorityMap != nil){
+            eventPriorityHashMap = [NSDictionary dictionaryWithObjects:[self.eventPriorityMap valueForKey:@"to"]
+                                                               forKeys:[self.eventPriorityMap valueForKey:@"from"]];
+        }
         NSString *event = message.event;
         NSDictionary *properties = message.properties;
-        if( properties != nil ){
+        NSLog(@"Check config");
+        [RSLogger logDebug:[[NSString alloc] initWithFormat:@"%@", properties]];
+        if(eventPriorityHashMap != nil && [eventPriorityHashMap objectForKey:event] != nil){
+            if([[eventPriorityHashMap valueForKey:event]isEqualToString:@"Normal"])
+                [MSACAnalytics trackEvent:event withProperties:properties flags:MSACFlagsNormal];
+            else if ([[eventPriorityHashMap valueForKey:event]isEqualToString:@"Critical"])
+                [MSACAnalytics trackEvent:event withProperties:properties flags:MSACFlagsCritical];
+        }else{
             [MSACAnalytics trackEvent:event withProperties:properties];
         }
-        if(self.transmissionLevel != nil){
-            [MSACAnalytics setTransmissionInterval:60*[self.transmissionLevel integerValue]];
-        }
-#endif
-        
     }else if ([type isEqualToString:@"screen"]){
         // do for page
+        //   NSString *name = message.name;
+        NSDictionary *properties = message.properties;
+        NSString *eventName = [NSString stringWithFormat: @"Viewed %@", [properties objectForKey:@"name"]];
+        if(properties!= nil)
+            [MSACAnalytics trackEvent:eventName withProperties:properties];
+        
     }else {
         [RSLogger logDebug:@"AppCenter Integration: Message type not supported"];
     }
     
 }
+
+
 @end
