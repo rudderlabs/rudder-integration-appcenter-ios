@@ -19,12 +19,11 @@
     if (self) {
         [RSLogger logDebug:@"Initializing AppCenter SDK"];
         dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"Check config");
-            [RSLogger logDebug:[[NSString alloc] initWithFormat:@"%@", [config objectForKey:@"appSecret"]]];
+            if(config == nil) {
+                [RSLogger logError:@"Config is null. Cannot send events."];
+            }
             self.transmissionLevel = [config objectForKey:@"transmissionLevel"];
             if(![self.transmissionLevel isEqualToString: @""]){
-                NSLog(@"inside transmission level");
-                [RSLogger logDebug:[[NSString alloc] initWithFormat:@"%ld", 60*[self.transmissionLevel integerValue]]];
                 [MSACAnalytics setTransmissionInterval:60*[self.transmissionLevel integerValue]];
             }
             self.eventPriorityMap = [config objectForKey:@"eventPriorityMap"];
@@ -56,7 +55,6 @@
 - (void) processRudderEvent: (nonnull RSMessage *) message {
     NSString *type = message.type;
     if([type isEqualToString:@"track"]){
-        [RSLogger logDebug:@"Inside track"];
         // do for track
         NSDictionary *eventPriorityHashMap = nil;
         if(self.eventPriorityMap != nil){
@@ -64,21 +62,21 @@
                                                                forKeys:[self.eventPriorityMap valueForKey:@"from"]];
         }
         NSString *event = message.event;
-        NSDictionary *properties = message.properties;
-        NSLog(@"Check config");
-        [RSLogger logDebug:[[NSString alloc] initWithFormat:@"%@", properties]];
+        NSDictionary *properties =  [self filterProperties:message.properties];
         if(eventPriorityHashMap != nil && [eventPriorityHashMap objectForKey:event] != nil){
+            
             if([[eventPriorityHashMap valueForKey:event]isEqualToString:@"Normal"])
+            {
                 [MSACAnalytics trackEvent:event withProperties:properties flags:MSACFlagsNormal];
-            else if ([[eventPriorityHashMap valueForKey:event]isEqualToString:@"Critical"])
+            }else if ([[eventPriorityHashMap valueForKey:event]isEqualToString:@"Critical"]){
                 [MSACAnalytics trackEvent:event withProperties:properties flags:MSACFlagsCritical];
+            }
         }else{
             [MSACAnalytics trackEvent:event withProperties:properties];
         }
     }else if ([type isEqualToString:@"screen"]){
-        // do for page
         //   NSString *name = message.name;
-        NSDictionary *properties = message.properties;
+        NSDictionary *properties =  [self filterProperties:message.properties];
         NSString *eventName = [NSString stringWithFormat: @"Viewed %@", [properties objectForKey:@"name"]];
         if(properties!= nil)
             [MSACAnalytics trackEvent:eventName withProperties:properties];
@@ -89,5 +87,24 @@
     
 }
 
+#pragma mark - Utils
+
+// remove nested properties and convert numbers to string.
+
+- (NSMutableDictionary*) filterProperties: (NSDictionary*) properties {
+    NSMutableDictionary *filteredProperties = nil;
+    if (properties != nil) {
+        filteredProperties = [[NSMutableDictionary alloc] init];
+        for (NSString *key in properties.allKeys) {
+            id val = properties[key];
+            if ([val isKindOfClass:[NSString class]]) {
+                filteredProperties[key] = val;
+            }else if([val isKindOfClass:[NSNumber class]]){
+                filteredProperties[key] = [val stringValue];
+            }
+        }
+    }
+    return filteredProperties;
+}
 
 @end
