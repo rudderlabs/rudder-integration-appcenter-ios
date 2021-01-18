@@ -14,7 +14,7 @@
 
 #pragma mark - Initialization
 
-- (instancetype) initWithConfig:(NSDictionary *)config withAnalytics:(RSClient *)client withRudderConfig:(RSConfig *)rudderCinfig {
+- (instancetype) initWithConfig:(NSDictionary *)config withAnalytics:(RSClient *)client withRudderConfig:(RSConfig *)rudderConfig {
     self = [super init];
     if (self) {
         [RSLogger logDebug:@"Initializing AppCenter SDK"];

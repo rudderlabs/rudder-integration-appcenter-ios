@@ -8,9 +8,7 @@
 
 #import "_AppDelegate.h"
 #import <Rudder/Rudder.h>
-@import AppCenter;
-@import AppCenterAnalytics;
-@import AppCenterCrashes;
+#import <RudderAppCenterFactory.h>
 #import <CoreLocation/CoreLocation.h>
 
 @interface _AppDelegate () <CLLocationManagerDelegate>
@@ -24,42 +22,67 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [MSACAppCenter start:@"c48e5ee6-98f5-426b-adc8-d431f388c084" withServices:@[
-      [MSACAnalytics class],
-      [MSACCrashes class]
-    ]];
+    NSString *WRITE_KEY = @"1n4UdzGfTIEV7rOux0bl9IpPaok";
+    //   NSString *DATA_PLANE_URL = @"https://8e50d3caecbe.ngrok.io";
     
-    self.locationManager = [[CLLocationManager alloc] init];
-      self.locationManager.delegate = self;
-      self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
-      [self.locationManager requestWhenInUseAuthorization];
+    RSConfigBuilder *configBuilder = [[RSConfigBuilder alloc] init];
+    //  [configBuilder withDataPlaneUrl:DATA_PLANE_URL];
+    [configBuilder withControlPlaneUrl:@"https://87d77a187bed.ngrok.io"];
+    [configBuilder withLoglevel:RSLogLevelDebug];
+    [configBuilder withFactory:[RudderAppCenterFactory instance]];
+    // [configBuilder withTrackLifecycleEvens:false];
+    [RSClient getInstance:WRITE_KEY config:[configBuilder build]];
     
-    NSDictionary *properties = @{@"Category" : @"Music", @"FileName" : @"favorite.avi"};
-    [MSACAnalytics trackEvent:@"Video clicked" withProperties: properties];
     
+    
+    //   [[RSClient sharedInstance] reset];
+//        [[RSClient sharedInstance] identify: @"test_user_id_ios_2"
+//                                     traits: @{
+//                                         @"foo": @"bar",
+//                                         @"foo1": @"bar1",
+//                                         @"email": @"test_2@gmail.com"
+//                                     }
+//         ];
+    [[RSClient sharedInstance] track:@"ruchira event 2"
+                           properties:@{@"name": @"screen2",
+                                        @"new propert": @1
+                           }];
+//    [[RSClient sharedInstance] track:@"abc1"];
+//    [[RSClient sharedInstance] screen:@"screen3"];
+//    [[RSClient sharedInstance] track:@"test with nested 1"
+//                          properties:@{@"prop1": @"value1",
+//                                       @"prop2": @{@"prop2-1":@"value2-1",
+//                                                   @"prop2-2":@"value2-2"
+//                                       }
+//                          }];
+    //    [[RSClient sharedInstance] track:@"test track"
+    //                          properties:@{@"prop1": @"value1"}];
+//        [[RSClient sharedInstance] screen:@"screen2"
+//                               properties:@{@"name": @"screen2",
+//                                            @"new propert": @"prop val 1"
+//                               }];
+//    [[RSClient sharedInstance] track:@"QWERTY"
+//                           properties:@{@"name": @"screen2",
+//                                        @"new propert": @"prop val 1"
+//                           }];
+    
+    //    [[RSClient sharedInstance]  alias:@"newId"];
+    
+    //    [[RSClient sharedInstance] identify:@"666"
+    //                                     traits:@{@"name": @"abc Mazumder",
+    //                                              @"firstname": @"abc",
+    //                                              @"lastname": @"Mazumder",
+    //                                              @"email": @"nirab@gmail.com",
+    //                                              @"city": @"Delhi",
+    //                                              @"country" : @"India",
+    //                                              @"gender" : @"Male"
+    //                                     }
+    //        ];
+//    [[RSClient sharedInstance] reset];
     return YES;
 }
-- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-  if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
-    [manager requestLocation];
-  }
-}
 
-- (void)locationManger:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
-  CLLocation *location = [locations lastObject];
-  CLGeocoder *geocoder = [[CLGeocoder alloc] init];
-  [geocoder reverseGeocodeLocation:location
-                 completionHandler:^(NSArray *placemarks, NSError *error) {
-                   if (placemarks.count == 0 || error)
-                     return;
-                   CLPlacemark *pm = [placemarks firstObject];
-                   [MSACAppCenter setCountryCode:pm.ISOcountryCode];
-  }];
-}
 
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-  NSLog(@"Failed to find user's location: \(error.localizedDescription)");
-}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
