@@ -63,6 +63,7 @@
         }
         NSString *event = message.event;
         NSDictionary *properties =  [self filterProperties:message.properties];
+        
         if(eventPriorityHashMap != nil && [eventPriorityHashMap objectForKey:event] != nil){
             
             if([[eventPriorityHashMap valueForKey:event]isEqualToString:@"Normal"])
@@ -77,7 +78,7 @@
     }else if ([type isEqualToString:@"screen"]){
         //   NSString *name = message.name;
         NSDictionary *properties =  [self filterProperties:message.properties];
-        NSString *eventName = [NSString stringWithFormat: @"Viewed %@", [properties objectForKey:@"name"]];
+        NSString *eventName = [NSString stringWithFormat: @"Viewed %@ screen", [properties objectForKey:@"name"]];
         if(properties!= nil)
             [MSACAnalytics trackEvent:eventName withProperties:properties];
         
@@ -99,8 +100,14 @@
             id val = properties[key];
             if ([val isKindOfClass:[NSString class]]) {
                 filteredProperties[key] = val;
-            }else if([val isKindOfClass:[NSNumber class]]){
+            }else if([val isKindOfClass:[NSNumber class]] ){
                 filteredProperties[key] = [val stringValue];
+            }else if([val isKindOfClass:[NSArray class]]){
+                NSString * stringValueFromArray = [val componentsJoinedByString:@""];
+                filteredProperties[key] = stringValueFromArray;
+            }else if([val isKindOfClass:[NSObject class]]){
+                NSObject* obj= val;
+               filteredProperties[key] = [NSString stringWithFormat:@"%@", obj];
             }
         }
     }
