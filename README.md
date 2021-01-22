@@ -1,29 +1,34 @@
-# Rudder-AppCenter
+# What is RudderStack?
 
-[![CI Status](https://img.shields.io/travis/Ruchira/Rudder-AppCenter.svg?style=flat)](https://travis-ci.org/Ruchira/Rudder-AppCenter)
-[![Version](https://img.shields.io/cocoapods/v/Rudder-AppCenter.svg?style=flat)](https://cocoapods.org/pods/Rudder-AppCenter)
-[![License](https://img.shields.io/cocoapods/l/Rudder-AppCenter.svg?style=flat)](https://cocoapods.org/pods/Rudder-AppCenter)
-[![Platform](https://img.shields.io/cocoapods/p/Rudder-AppCenter.svg?style=flat)](https://cocoapods.org/pods/Rudder-AppCenter)
+**Short answer:** 
+RudderStack is an open-source Segment alternative written in Go, built for the enterprise. .
 
-## Example
+**Long answer:** 
+RudderStack is a platform for collecting, storing and routing customer event data to dozens of tools. Rudder is open-source, can run in your cloud environment (AWS, GCP, Azure or even your data-centre) and provides a powerful transformation framework to process your event data on the fly.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Getting Started with App Center Integration of iOS SDK
+[App Center](https://appcenter.ms/) is Microsoft's cross-platform build automation and management platform that lets you seamlessly manage your app's lifecycle. With App Center, you can easily manage and automate your builds, effectively test your apps in the cloud, and monitor their real-time usage with the help of crash data and analytics.
 
-## Requirements
+1. Add App Center as destination from Rudder Dashboard and add the app secret key.
 
-## Installation
-
-Rudder-AppCenter is available through [CocoaPods](https://cocoapods.org). To install
+2. Rudder-AppCenter is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'Rudder-AppCenter'
 ```
 
-## Author
+## Initialize ```RudderClient```
+Put this code in your ```AppDelegate.m``` file under the method ```didFinishLaunchingWithOptions```
+```
+RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
+[builder withDataPlaneUrl:<YOUR_DATA_PLANE_URL>];
+[builder withFactory:[RudderAppCenterFactory instance]];
+[RSClient getInstance:<YOUR_WRITE_KEY> config:[builder build]];
+```
 
-Ruchira, ruchira@rudderlabs.com
+## Send Events
+Follow the steps from [RudderStack iOS SDK](https://github.com/rudderlabs/rudder-sdk-ios)
 
-## License
-
-Rudder-AppCenter is available under the MIT license. See the LICENSE file for more info.
+## Contact Us
+If you come across any issues while configuring or using RudderStack, please feel free to [contact us](https://rudderstack.com/contact/) or start a conversation on our [Slack](https://resources.rudderstack.com/join-rudderstack-slack) channel. We will be happy to help you.
