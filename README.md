@@ -9,8 +9,9 @@ RudderStack is a platform for collecting, storing and routing customer event dat
 ## Getting Started with App Center Integration of iOS SDK
 [App Center](https://appcenter.ms/) is Microsoft's cross-platform build automation and management platform that lets you seamlessly manage your app's lifecycle. With App Center, you can easily manage and automate your builds, effectively test your apps in the cloud, and monitor their real-time usage with the help of crash data and analytics.
 
+1. Add App Center as destination from Rudder Dashboard and add the app secret key.
 
-3. Rudder-AppCenter is available through [CocoaPods](https://cocoapods.org). To install
+2. Rudder-AppCenter is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
