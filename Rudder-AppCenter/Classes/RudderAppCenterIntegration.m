@@ -93,19 +93,19 @@
 // remove nested properties and convert numbers to string.
 
 - (NSMutableDictionary*) filterProperties: (NSDictionary*) properties {
-     NSMutableDictionary *filteredProperties = nil;
-     if (properties != nil) {
-         filteredProperties = [[NSMutableDictionary alloc] init];
-         for (NSString *key in properties.allKeys) {
-             id val = properties[key];
-             if ([val isKindOfClass:[NSString class]]) {
-                 filteredProperties[key] = val;
-             }else if([val isKindOfClass:[NSNumber class]]){
-                 filteredProperties[key] = [val stringValue];
-             }
-         }
-     }
-     return filteredProperties;
- }
+    NSMutableDictionary *filteredProperties = nil;
+    if (properties != nil) {
+        filteredProperties = [[NSMutableDictionary alloc] init];
+        for (NSString *key in properties.allKeys) {
+            id val = properties[key];
+            if ([val isKindOfClass:[NSString class]]) {
+                filteredProperties[key] = val;
+            }else if([val isKindOfClass:[NSNumber class]]){
+                filteredProperties[key] = [val stringValue];
+            }
+        }
+    }
+    return filteredProperties;
+}
 
 @end
