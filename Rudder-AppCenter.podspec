@@ -1,45 +1,28 @@
-#
-# Be sure to run `pod lib lint Rudder-AppCenter.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'Rudder-AppCenter'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Rudder-AppCenter.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '1.0.0'
+  s.summary          = 'Privacy and Security focused Segment-alternative. AppCenter Native SDK integration support.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Rudder is a platform for collecting, storing and routing customer event data to dozens of tools. Rudder is open-source, can run in your cloud environment (AWS, GCP, Azure or even your data-centre) and provides a powerful transformation framework to process your event data on the fly.
                        DESC
 
-  s.homepage         = 'https://github.com/Ruchira/Rudder-AppCenter'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Ruchira' => 'ruchira@rudderlabs.com' }
-  s.source           = { :git => 'https://github.com/Ruchira/Rudder-AppCenter.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.homepage         = 'https://github.com/rudderlabs/rudder-integration-appcenter-ios'
+  s.license          = { :type => "Apache", :file => "LICENSE" }
+  s.author           = { 'RudderStack' => 'ruchira@rudderstack.com' }
+  s.source           = { :git => 'https://github.com/rudderlabs/rudder-integration-appcenter-ios.git', :tag => 'v1.0.1' }
+  s.platform         = :ios, "9.0"
 
-  s.ios.deployment_target = '9.0'
+  ## Ref: https://github.com/CocoaPods/CocoaPods/issues/10065
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.source_files = 'Rudder-AppCenter/Classes/**/*'
-  
-  s.dependency 'AppCenter'
-  s.dependency 'Rudder'
-  
-  # s.resource_bundles = {
-  #   'Rudder-AppCenter' => ['Rudder-AppCenter/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.static_framework = true
+
+  s.dependency 'Rudder'
+  s.dependency 'AppCenter'
 end
