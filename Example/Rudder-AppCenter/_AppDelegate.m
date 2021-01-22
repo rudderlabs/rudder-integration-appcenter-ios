@@ -7,14 +7,81 @@
 //
 
 #import "_AppDelegate.h"
+#import <Rudder/Rudder.h>
+#import <RudderAppCenterFactory.h>
+#import <CoreLocation/CoreLocation.h>
+
+@interface _AppDelegate () <CLLocationManagerDelegate>
+@property(nonatomic) CLLocationManager *locationManager;
+@end
 
 @implementation _AppDelegate
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSString *WRITE_KEY = @"1n4UdzGfTIEV7rOux0bl9IpPaok";
+    //   NSString *DATA_PLANE_URL = @"https://8e50d3caecbe.ngrok.io";
+    
+    RSConfigBuilder *configBuilder = [[RSConfigBuilder alloc] init];
+    //  [configBuilder withDataPlaneUrl:DATA_PLANE_URL];
+    [configBuilder withControlPlaneUrl:@"https://87d77a187bed.ngrok.io"];
+    [configBuilder withLoglevel:RSLogLevelDebug];
+    [configBuilder withFactory:[RudderAppCenterFactory instance]];
+    // [configBuilder withTrackLifecycleEvens:false];
+    [RSClient getInstance:WRITE_KEY config:[configBuilder build]];
+    
+    
+    
+    //   [[RSClient sharedInstance] reset];
+//        [[RSClient sharedInstance] identify: @"test_user_id_ios_2"
+//                                     traits: @{
+//                                         @"foo": @"bar",
+//                                         @"foo1": @"bar1",
+//                                         @"email": @"test_2@gmail.com"
+//                                     }
+//         ];
+    [[RSClient sharedInstance] track:@"ruchira event 2"
+                           properties:@{@"name": @"screen2",
+                                        @"new propert": @1
+                           }];
+//    [[RSClient sharedInstance] track:@"abc1"];
+//    [[RSClient sharedInstance] screen:@"screen3"];
+//    [[RSClient sharedInstance] track:@"test with nested 1"
+//                          properties:@{@"prop1": @"value1",
+//                                       @"prop2": @{@"prop2-1":@"value2-1",
+//                                                   @"prop2-2":@"value2-2"
+//                                       }
+//                          }];
+    //    [[RSClient sharedInstance] track:@"test track"
+    //                          properties:@{@"prop1": @"value1"}];
+//        [[RSClient sharedInstance] screen:@"screen2"
+//                               properties:@{@"name": @"screen2",
+//                                            @"new propert": @"prop val 1"
+//                               }];
+//    [[RSClient sharedInstance] track:@"QWERTY"
+//                           properties:@{@"name": @"screen2",
+//                                        @"new propert": @"prop val 1"
+//                           }];
+    
+    //    [[RSClient sharedInstance]  alias:@"newId"];
+    
+    //    [[RSClient sharedInstance] identify:@"666"
+    //                                     traits:@{@"name": @"abc Mazumder",
+    //                                              @"firstname": @"abc",
+    //                                              @"lastname": @"Mazumder",
+    //                                              @"email": @"nirab@gmail.com",
+    //                                              @"city": @"Delhi",
+    //                                              @"country" : @"India",
+    //                                              @"gender" : @"Male"
+    //                                     }
+    //        ];
+//    [[RSClient sharedInstance] reset];
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

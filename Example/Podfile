@@ -7,7 +7,6 @@ target 'Rudder-AppCenter_Example' do
 
   target 'Rudder-AppCenter_Tests' do
     inherit! :search_paths
-
     
   end
 end
