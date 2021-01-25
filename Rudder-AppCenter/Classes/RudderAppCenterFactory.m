@@ -21,7 +21,7 @@ static RudderAppCenterFactory *sharedInstance;
 }
 
 - (nonnull NSString *)key {
-    return @"AppCenter";
+    return @"App Center";
 }
 
 -(id<RSIntegration>)initiate:(NSDictionary *)config client:(RSClient *)client rudderConfig:(RSConfig *)rudderConfig{
