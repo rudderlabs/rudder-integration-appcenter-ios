@@ -3,24 +3,29 @@ name: Draft new release
 on:
   workflow_dispatch
 
+permissions:
+  contents: read
+
 jobs:
   draft-new-release:
+    permissions:
+      contents: write  # for Git to git push
     name: Draft a new release
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/heads/fix/') || startsWith(github.ref, 'refs/heads/feature/')
     steps:
       - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@v2
+        uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
         with:
           egress-policy: audit
 
       - name: Checkout source branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
         with:
           fetch-depth: 0
 
       - name: Set Node 16
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3.9.1
         with:
           node-version: 16
           
@@ -84,7 +89,7 @@ jobs:
           git push --follow-tags
 
       - name: Create pull request into master
-        uses: repo-sync/pull-request@v2
+        uses: repo-sync/pull-request@7e79a9f5dc3ad0ce53138f01df2fad14a04831c5 # v2.12.1
         with:
           source_branch: ${{ steps.create-release.outputs.branch_name }}
           destination_branch: 'master'
