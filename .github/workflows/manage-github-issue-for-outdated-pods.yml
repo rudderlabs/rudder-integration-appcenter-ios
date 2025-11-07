@@ -11,11 +11,11 @@ jobs:
     name: Check outdate pods and create issue if it doesn't exist
     steps:
       - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@v2
+        uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
         with:
           egress-policy: audit
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
 
       - name: Check outdated pods and create issue
         id: check-outdated-pods-and-create-issue

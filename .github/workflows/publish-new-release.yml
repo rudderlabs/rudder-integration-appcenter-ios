@@ -14,7 +14,7 @@ jobs:
     if: startsWith(github.event.pull_request.head.ref, 'release/') && github.event.pull_request.merged == true # only merged pull requests must trigger this job
     steps:
       - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@v2
+        uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
         with:
           egress-policy: audit
 
@@ -26,12 +26,12 @@ jobs:
           echo "release_version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Checkout source branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
         with:
           fetch-depth: 0
 
       - name: Set Node 16
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3.9.1
         with:
           node-version: 16
 
@@ -45,7 +45,7 @@ jobs:
           npx conventional-github-releaser -p angular
 
       - name: Delete release branch
-        uses: koj-co/delete-merged-action@master
+        uses: koj-co/delete-merged-action@63a03c35810a8a7d4840d18793c0f68ff8b59450 # master
         if: startsWith(github.event.pull_request.head.ref, 'release/')
         with:
           branches: 'release/*'
