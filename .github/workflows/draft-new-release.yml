@@ -24,6 +24,7 @@ jobs:
           private-key: ${{ secrets.RELEASE_PRIVATE_KEY }}
           permission-contents: write # to create commits, tags, and push branches
           permission-pull-requests: write # to create and update PRs
+          permission-members: read # to request team reviewers on PRs
 
       - name: Checkout source branch
         uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
@@ -113,4 +114,4 @@ jobs:
           github_token: ${{ steps.generate-token.outputs.token }}
           pr_title: "chore(release): pulling ${{ steps.create-release.outputs.branch_name }} into master"
           pr_body: ":crown: *An automated PR*\n\n${{ steps.finish-release.outputs.commit_summary }}"
-          pr_reviewer: 'pallabmaiti'
+          pr_reviewer: '@rudderlabs/sdk-ios'
