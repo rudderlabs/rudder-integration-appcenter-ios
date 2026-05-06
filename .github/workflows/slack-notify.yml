@@ -19,7 +19,7 @@ jobs:
 
       - name: Send message to Slack channel
         id: slack
-        uses: slackapi/slack-github-action@007b2c3c751a190b6f0f040e47ed024deaa72844 # v1.23.0
+        uses: slackapi/slack-github-action@91efab103c0de0a537f72a35f6b8cda0ee76bf0a # v2.1.1
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           PROJECT_NAME: 'iOS App Center SDK'
