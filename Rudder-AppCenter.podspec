@@ -15,18 +15,12 @@ Rudder is a platform for collecting, storing and routing customer event data to 
   s.license          = { :type => "MIT", :file => "LICENSE.md" }
   s.author           = { 'RudderStack' => 'ruchira@rudderstack.com' }
   s.source           = { :git => 'https://github.com/rudderlabs/rudder-integration-appcenter-ios.git', :tag => "v#{s.version}" }
-  s.platform         = :ios, "9.0"
-
-  ## Ref: https://github.com/CocoaPods/CocoaPods/issues/10065
-  s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.platform         = :ios, "15.0"
 
   s.source_files = 'Rudder-AppCenter/Classes/**/*'
 
   s.static_framework = true
 
-  s.dependency 'Rudder'
+  s.dependency 'Rudder', '~> 1.0'
   s.dependency 'AppCenter'
 end
