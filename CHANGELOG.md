@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/rudderlabs/rudder-integration-appcenter-ios/compare/v1.1.0...v1.2.0) (2026-11-20)
+
+
+### Features
+
+* add swift package manager support ([#42](https://github.com/rudderlabs/rudder-integration-appcenter-ios/issues/42)) ([537ebaf](https://github.com/rudderlabs/rudder-integration-appcenter-ios/commit/537ebafac7f4e3c2b826b57c5a311cfeab93754e))
+
 ## [1.1.0](https://github.com/rudderlabs/rudder-integration-appcenter-ios/compare/v1.0.1...v1.1.0) (2026-11-18)
 
 
